@@ -6,7 +6,7 @@ import AboutUs from "./pages/AboutUs";
 import Blog from "./pages/Blog";
 import Collection from "./pages/Collection";
 import Contact from "./pages/Contact";
-import Liked from "./pages/Liked";
+import Liked from "./pages/liked";
 import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 

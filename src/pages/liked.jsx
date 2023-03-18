@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Liked() {
   return (
-    <div>liked product product</div>
+    <div>liked profuct page</div>
   )
 }

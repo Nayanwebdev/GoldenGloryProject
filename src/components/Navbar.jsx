@@ -2,6 +2,10 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { MdClose, MdMenu } from "react-icons/md";
 import { useState } from "react";
+import Logo from "src/assets/images/logo_icon.png"
+import Avtar from "/src/assets/images/avatar_icon.svg"
+import Cart from "/src/assets/images/cart_icon.svg"
+import Liked from "/src/assets/images/heart_icon.svg"
 
 const Wrapper = styled.div`
   header {
@@ -257,7 +261,7 @@ export default function Navbar() {
           <nav className="navbar">
             <div className="header-left-ggp">
               <div className="nav-brand-ggp">
-                <img src="/src/assets/images/logo_icon.png" alt="logo" />
+                <img src={Logo} alt="logo" />
                 <h2>golden glory</h2>
               </div>
             </div>
@@ -300,17 +304,17 @@ export default function Navbar() {
               <ul>
                 <li>
                   <NavLink className="nav-link" to="/Liked" role="button" exact="true">
-                    <img src="/src/assets/images/heart_icon.svg" alt="header-icon" />
+                    <img src={Liked} alt="header-icon" />
                   </NavLink>
                 </li>
                 <li>
                   <NavLink className="nav-link" to="/Cart" role="button" exact="true">
-                    <img src="/src/assets/images/cart_icon.svg" alt="header-icon" />
+                    <img src={Cart} alt="header-icon" />
                   </NavLink>
                 </li>
                 <li>
                   <NavLink className="nav-link" to="/Profile" role="button" exact="true">
-                    <img src="/src/assets/images/avatar_icon.svg" alt="header-icon" />
+                    <img src={Avtar} alt="header-icon" />
                   </NavLink>
                 </li>
               </ul>

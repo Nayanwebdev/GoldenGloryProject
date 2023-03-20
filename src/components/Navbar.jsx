@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { MdClose, MdMenu } from "react-icons/md";
 import { useState } from "react";
-import Logo from "../assets/images/logo_icon.png"
-import Avtar from "../assets/images/avatar_icon.svg"
-import Cart from "../assets/images/cart_icon.svg"
-import Liked from "../assets/images/heart_icon.svg"
+import Logo from "../assets/images/logo_icon.png";
+import Avtar from "../assets/images/avatar_icon.svg";
+import Cart from "../assets/images/cart_icon.svg";
+import Liked from "../assets/images/heart_icon.svg";
 
 const Wrapper = styled.div`
   header {

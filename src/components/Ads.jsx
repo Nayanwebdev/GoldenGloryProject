@@ -44,25 +44,36 @@ const Wrapper = styled.div`
           position: relative;
           width: 608px;
           height: 474px;
+          text-align: end;
           img {
-            width: 100%;
+            width: 470px;
             height: 100%;
           }
           .ads-content-hp {
             position: absolute;
-            left: 38px;
+            left: 35px;
             bottom: 25px;
-            h4 {
-              font-size: 25px;
-              line-height: 38px;
-              text-transform: capitalize;
-              color: var(--white-color);
-            }
+            text-align: start;
             h2 {
               font-size: 48px;
               line-height: 69px;
-              color: var(--white-color);
+              font-weight: 400;
+              color: var(--text-color);
             }
+            h4 {
+              font-size: 25px;
+              line-height: 38px;
+              font-weight: 400;
+              text-transform: capitalize;
+              color: var(--text-color);
+            }
+          }
+          ::before {
+            content: "";
+            position: absolute;
+            background: rgb(0 0 0 / 15%);
+            width: 470px;
+            height: 100%;
           }
         }
       }
@@ -110,6 +121,7 @@ const Wrapper = styled.div`
             width: 100%;
             height: 320px;
             img {
+              width: 100%;
               object-fit: cover;
             }
             .ads-content-hp {
@@ -118,11 +130,16 @@ const Wrapper = styled.div`
               h2 {
                 font-size: 30px;
                 line-height: 36px;
+                color: var(--white-color);
               }
               h4 {
                 font-size: 16px;
                 line-height: 22px;
+                color: var(--white-color);
               }
+            }
+            ::before {
+              width: 100%;
             }
           }
         }
@@ -164,6 +181,7 @@ const Wrapper = styled.div`
             width: 100%;
             height: 400px;
             img {
+              width: 100%;
               object-fit: cover;
             }
             .ads-content-hp {
@@ -172,11 +190,16 @@ const Wrapper = styled.div`
               h2 {
                 font-size: 40px;
                 line-height: 48px;
+                color: var(--white-color);
               }
               h4 {
                 font-size: 18px;
                 line-height: 22px;
+                color: var(--white-color);
               }
+            }
+            ::before {
+              width: 100%;
             }
           }
         }
@@ -211,13 +234,14 @@ const Wrapper = styled.div`
     padding: 0px 0px 60px;
     .ads-block-main-hp {
       .ads-block-in-hp {
-        gap: 10px;
+        gap: 15px;
         .left-ads-block-hp {
           width: 50%;
           .left-box-hp {
             width: 100%;
             height: 360px;
             img {
+              width: 100%;
               object-fit: cover;
             }
             .ads-content-hp {
@@ -226,11 +250,16 @@ const Wrapper = styled.div`
               h2 {
                 font-size: 40px;
                 line-height: 48px;
+                color: var(--white-color);
               }
               h4 {
                 font-size: 18px;
                 line-height: 22px;
+                color: var(--white-color);
               }
+            }
+            ::before {
+              width: 100%;
             }
           }
         }
@@ -273,6 +302,7 @@ const Wrapper = styled.div`
             width: 100%;
             height: 360px;
             img {
+              width: 82%;
               object-fit: cover;
             }
             .ads-content-hp {
@@ -286,6 +316,9 @@ const Wrapper = styled.div`
                 font-size: 18px;
                 line-height: 22px;
               }
+            }
+            ::before {
+              width: 82%;
             }
           }
         }
@@ -321,15 +354,16 @@ const Wrapper = styled.div`
       .ads-block-in-hp {
         gap: 30px;
         .left-ads-block-hp {
-          width: 40%;
+          width: 50%;
           .left-box-hp {
             width: 100%;
             height: 360px;
             img {
+              width: 88%;
               object-fit: cover;
             }
             .ads-content-hp {
-              left: 20px;
+              left: 0px;
               bottom: 20px;
               h2 {
                 font-size: 40px;
@@ -339,6 +373,9 @@ const Wrapper = styled.div`
                 font-size: 18px;
                 line-height: 22px;
               }
+            }
+            ::before {
+              width: 88%;
             }
           }
         }

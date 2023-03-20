@@ -37,6 +37,26 @@ const Wrapper = styled.div`
     @media (min-width: 1200px) and (max-width: 1440px) {
     }
   }
+  .add-to-cart-btn {
+    background-color: var(--text-color);
+    width: 100%;
+    border-radius: 0px;
+    font-size: 20px;
+    line-height: 46px;
+    :hover{
+      background-color: var(--golden-color);
+    }
+    text-transform: uppercase;
+    @media (max-width: 767px) {
+      font-size: 14px;
+      line-height: 36px;
+    }
+    @media (max-width: 1200px) {
+      font-size: 16px;
+      line-height: 40px;
+    }
+    
+  }
 `;
 
 export default function Button({ btn_text, class_name }) {

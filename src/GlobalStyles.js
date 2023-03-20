@@ -17,6 +17,7 @@ body {
   --golden-color: #C18F61;
   --white-color: #ffffff;
   --black-color: #000;
+  --bg-color: #fff1e5;
 }
 
 h1,
@@ -41,14 +42,6 @@ p {
 
 a {
     text-decoration: none;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-}
-
-.btn {
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
@@ -156,6 +149,17 @@ img {
         max-width: 1140px;
     }
 }
+
+/* @media (min-width: 0px) and (max-width: 575px) {
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+  } 
+  @media (min-width: 1200px) and (max-width: 1440px) {
+  } */
 `;
 
 export default GlobalStyle;

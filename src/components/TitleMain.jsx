@@ -1,6 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
+
+
+export default function TitleMain({ subTitle, mainTitle }) {
+  return (
+    <Wrapper>
+      <h4>{subTitle}</h4>
+      <h2>{mainTitle}</h2>
+    </Wrapper>
+  );
+}
 const Wrapper = styled.div`
   h4 {
     font-size: 25px;
@@ -17,9 +27,9 @@ const Wrapper = styled.div`
   }
   @media (min-width: 0px) and (max-width: 575px) {
     h4 {
-      font-size: 20px;
-      line-height: 26px;
-      padding-bottom: 10px;
+      font-size: 16px;
+      line-height: 22px;
+      padding-bottom: 8px;
     }
     h2 {
       font-size: 30px;
@@ -29,7 +39,7 @@ const Wrapper = styled.div`
   }
   @media (min-width: 576px) and (max-width: 767px) {
     h4 {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 26px;
       padding-bottom: 10px;
     }
@@ -67,12 +77,3 @@ const Wrapper = styled.div`
   @media (min-width: 1200px) and (max-width: 1440px) {
   }
 `;
-
-export default function TitleMain({ subTitle, mainTitle }) {
-  return (
-    <Wrapper>
-      <h4>{subTitle}</h4>
-      <h2>{mainTitle}</h2>
-    </Wrapper>
-  );
-}

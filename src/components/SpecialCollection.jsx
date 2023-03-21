@@ -21,13 +21,6 @@ const Wrapper = styled.div`
   .special-collection-block-hp {
     position: relative;
     height: 727px;
-    /* ::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    } */
     .collection-content-hp {
       width: 100%;
       position: absolute;

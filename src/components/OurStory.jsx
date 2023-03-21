@@ -12,7 +12,7 @@ export default function OurStory() {
       <div className="ourstory-block-main-hp">
         <div className="container">
           <div className="ourstory-block-in-hp">
-            <div className="left-block-hp">
+            <div className="left-block-hp" style={{ backgroundImage: `url(${storyBg})`, backgroundSize: " contain" }}>
               <TitleMain mainTitle="Tradition Cared For Since 1998" subTitle="Our Story" />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing Bibendum est ultricies integer.</p>
               <div className="story-btn-hp">
@@ -51,9 +51,7 @@ const Wrapper = styled.div`
         ::after {
           content: "";
           position: absolute;
-          background: url("/src/assets/images/Ourstory.png");
           background-repeat: no-repeat;
-          background-size: contain;
           width: 1200px;
           height: 710px;
           right: -70px;

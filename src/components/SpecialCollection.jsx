@@ -8,9 +8,6 @@ export default function SpecialCollection() {
   return (
     <Wrapper>
       <div className="special-collection-block-hp">
-        {/* <div className="collection-img-hp">
-          <img src={CollectionImg} alt="CollectionImg" />
-        </div> */}
         <div className="collection-content-hp">
           <TitleMain mainTitle="Special Handpicked Diamond Products Collection" subTitle="Diamond collection" />
           <Button btn_text="buy now" class_name="dark-btn-hp" />
@@ -27,7 +24,7 @@ const Wrapper = styled.div`
     ::before {
       content: "";
       position: absolute;
-      background: url("/src/assets/images/Special_collection.png") no-repeat;
+      background: url("src/assets/images/Special_collection.png") no-repeat;
       background-size: cover;
       width: 100%;
       height: 100%;

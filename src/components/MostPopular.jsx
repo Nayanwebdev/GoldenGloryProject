@@ -111,7 +111,7 @@ const Wrapper = styled.div`
       right: 0;
       top: 0px;
       z-index: -1;
-      background: url("/src/assets/images/mostpopular_bg.png") no-repeat;
+      background: url("src/assets/images/mostpopular_bg.png") no-repeat;
       background-size: cover;
     }
 

@@ -7,7 +7,7 @@ import MostPopular from "../components/MostPopular";
 import NewsLetter from "../components/NewsLetter";
 import OurStory from "../components/OurStory";
 import SpecialCollection from "../components/SpecialCollection";
-import Testimonial from "../components/Testimonial";
+// import Testimonial from "../components/Testimonial";
 
 const Wrapper = styled.div``;
 
@@ -21,7 +21,7 @@ export default function Home() {
       <NewsLetter />
       <MostPopular />
       <SpecialCollection />
-      <Testimonial />
+      {/* <Testimonial /> */}
     </Wrapper>
   );
 }

@@ -6,7 +6,7 @@ import ProductCard from "./ProductCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import background from "../assets/images/mostpopular_bg.png"
 import img from "../assets/images/Peacock_Earrings.png";
 import img1 from "../assets/images/Pearls_Breslate_1.png";
 import img2 from "../assets/images/Pearls_Breslate_2.png";
@@ -74,7 +74,7 @@ export default function MostPopular() {
 
   return (
     <Wrapper>
-      <div className="mostpopular-block-main-hp">
+      <div className="mostpopular-block-main-hp" style={{backgroundImage: `url(${background})`,backgroundSize:'cover'}}>
         <div className="container">
           <div className="mostpopular-block-in-hp">
             <div className="populat-title-hp">
@@ -111,8 +111,8 @@ const Wrapper = styled.div`
       right: 0;
       top: 0px;
       z-index: -1;
-      background: url("src/assets/images/mostpopular_bg.png") no-repeat;
-      background-size: cover;
+      /* background: url("src/assets/images/mostpopular_bg.png") no-repeat; */
+      /* background-size: cover; */
     }
 
     .mostpopular-block-in-hp {

@@ -7,7 +7,7 @@ import TitleMain from "./TitleMain";
 export default function SpecialCollection() {
   return (
     <Wrapper>
-      <div className="special-collection-block-hp">
+      <div className="special-collection-block-hp" style={{backgroundImage: `url(${CollectionImg})`, backgroundSize:'cover'}}>
         <div className="collection-content-hp">
           <TitleMain mainTitle="Special Handpicked Diamond Products Collection" subTitle="Diamond collection" />
           <Button btn_text="buy now" class_name="dark-btn-hp" />
@@ -21,15 +21,13 @@ const Wrapper = styled.div`
   .special-collection-block-hp {
     position: relative;
     height: 727px;
-    ::before {
+    /* ::before {
       content: "";
       position: absolute;
-      background: url("src/assets/images/Special_collection.png") no-repeat;
-      background-size: cover;
       width: 100%;
       height: 100%;
       z-index: -1;
-    }
+    } */
     .collection-content-hp {
       width: 100%;
       position: absolute;

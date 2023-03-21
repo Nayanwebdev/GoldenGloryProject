@@ -4,7 +4,7 @@ import styled from "styled-components";
 import searchIcon from "../assets/images/search_icon.svg";
 import likeIcon from "../assets/images/heart_icon.svg";
 
-export default function ProductCard({ imgSrc, title, price }) {
+export default function ProductCard({ imgSrc, title, discPrice, price }) {
   return (
     <Wrapper>
       <div className="card-box-main-cb">
@@ -26,7 +26,12 @@ export default function ProductCard({ imgSrc, title, price }) {
         </div>
         <div className="card-content-cb">
           <h3 className="card-title"> {title} </h3>
-          <h4 className="card-price"> {price} </h4>
+
+          <h4 className="card-price">
+            {" "}
+            {price}
+            <span className="card-disc-price"> {discPrice} </span>
+          </h4>
         </div>
       </div>
     </Wrapper>
@@ -105,6 +110,12 @@ const Wrapper = styled.div`
         line-height: 26px;
         font-weight: 500;
         color: var(--text-color);
+        span {
+          display: inline-block;
+          padding-left: 8px;
+          color: var(--golden-color);
+          text-decoration: line-through;
+        }
       }
     }
     :hover {
@@ -119,6 +130,7 @@ const Wrapper = styled.div`
         height: 280px;
         img {
           width: 80%;
+          margin-inline: auto;
         }
       }
       .card-content-cb {
@@ -140,6 +152,7 @@ const Wrapper = styled.div`
         height: 280px;
         img {
           width: 80%;
+          margin-inline: auto;
         }
       }
       .card-content-cb {
@@ -158,10 +171,11 @@ const Wrapper = styled.div`
   @media (min-width: 768px) and (max-width: 991px) {
     .card-box-main-cb {
       .card-img-cb {
-          height: 320px;
-          img{
-            width: 90%;
-          }
+        height: 320px;
+        img {
+          width: 90%;
+          margin-inline: auto;
+        }
         .like {
           a {
             img {
@@ -183,10 +197,11 @@ const Wrapper = styled.div`
     .card-box-main-cb {
       .card-img-cb {
         height: 320px;
-        img{
-            width: 90%;
-          }
-          .like {
+        img {
+          width: 90%;
+          margin-inline: auto;
+        }
+        .like {
           a {
             img {
               height: 14px;
@@ -207,10 +222,11 @@ const Wrapper = styled.div`
     .card-box-main-cb {
       .card-img-cb {
         height: 320px;
-        img{
-            width: 90%;
-          }
-          .like {
+        img {
+          width: 90%;
+          margin-inline: auto;
+        }
+        .like {
           a {
             img {
               height: 14px;

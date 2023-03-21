@@ -24,6 +24,7 @@ const Wrapper = styled.div`
     line-height: 54px;
     padding-bottom: 20px;
     color: var(--text-color);
+    text-transform: capitalize;
   }
   @media (min-width: 0px) and (max-width: 575px) {
     h4 {

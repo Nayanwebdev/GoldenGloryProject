@@ -168,31 +168,43 @@ const Wrapper = styled.div`
         flex-direction: column-reverse;
         .left-block-hp {
           width: 100%;
-          padding: 40px 15px;
+          padding: 30px 15px;
           .left-block-content-hp {
             form {
-              width: 100%;
+              width: 90%;
+              margin-inline: auto;
               height: 50px;
               position: relative;
-              margin-block: 5px 25px;
+              margin-block: 5px 20px;
               input {
-                line-height: 55px;
-                font-size: 16px;
-                padding-inline: 28px 50px;
+                line-height: 46px;
+                font-size: 14px;
+                padding-inline: 28px 40px;
                 border-radius: 40px;
+                ::placeholder {
+                  font-size: 14px;
+                }
               }
               button {
                 right: 20px;
-                line-height: 55px;
+                line-height: 46px;
                 svg {
                   width: 20px;
                 }
               }
             }
             p {
-              font-size: 16px;
-              line-height: 20px;
               width: 100%;
+              font-size: 14px;
+              line-height: 20px;
+            }
+            h4 {
+              font-size: 14px;
+              line-height: 20px;
+            }
+            h2 {
+              font-size: 28px;
+              line-height: 34px;
             }
           }
         }
@@ -200,6 +212,9 @@ const Wrapper = styled.div`
           width: 100%;
           .right-block-img-hp {
             height: 360px;
+            img {
+              object-fit: cover;
+            }
             .right-block-title-hp {
               top: 25px;
               left: 10px;
@@ -237,6 +252,10 @@ const Wrapper = styled.div`
                 font-size: 14px;
                 line-height: 16px;
                 padding-bottom: 10px;
+              }
+              .btn-main-hp {
+                width: 80px;
+                line-height: 36px;
               }
             }
           }
@@ -253,19 +272,20 @@ const Wrapper = styled.div`
           padding: 40px 15px;
           .left-block-content-hp {
             form {
-              width: 100%;
+              width: 440px;
+              margin-inline: auto;
               height: 50px;
               position: relative;
               margin-block: 5px 25px;
               input {
-                line-height: 55px;
+                line-height: 50px;
                 font-size: 16px;
                 padding-inline: 28px 50px;
                 border-radius: 40px;
               }
               button {
                 right: 20px;
-                line-height: 55px;
+                line-height: 50px;
                 svg {
                   width: 20px;
                 }
@@ -274,14 +294,20 @@ const Wrapper = styled.div`
             p {
               font-size: 16px;
               line-height: 20px;
-              width: 100%;
+              width: 396px;
+            }
+            h2 {
+              max-width: 400px;
             }
           }
         }
         .right-block-hp {
           width: 100%;
           .right-block-img-hp {
-            height: 360px;
+            height: 380px;
+            img {
+              object-fit: cover;
+            }
             .right-block-title-hp {
               top: 25px;
               left: 10px;
@@ -320,6 +346,10 @@ const Wrapper = styled.div`
                 line-height: 16px;
                 padding-bottom: 10px;
               }
+              .btn-main-hp {
+                width: 96px;
+                line-height: 36px;
+              }
             }
           }
         }
@@ -327,9 +357,189 @@ const Wrapper = styled.div`
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
+    .newsletter-block-main-hp {
+      .newsletter-block-in-hp {
+        flex-direction: column-reverse;
+        .left-block-hp {
+          width: 100%;
+          padding: 60px 15px;
+          .left-block-content-hp {
+            form {
+              width: 440px;
+              margin-inline: auto;
+              height: 55px;
+              position: relative;
+              margin-block: 5px 40px;
+              input {
+                line-height: 55px;
+                font-size: 16px;
+                padding-inline: 28px 50px;
+                border-radius: 40px;
+              }
+              button {
+                right: 20px;
+                line-height: 55px;
+              }
+            }
+            p {
+              font-size: 16px;
+              line-height: 22px;
+              width: 396px;
+            }
+          }
+        }
+        .right-block-hp {
+          width: 100%;
+          .right-block-img-hp {
+            height: 640px;
+            img {
+              object-fit: cover;
+            }
+            .right-block-title-hp {
+              top: 30px;
+              left: 15px;
+              h2 {
+                font-size: 26px;
+                line-height: 26px;
+              }
+              h4 {
+                font-size: 14px;
+                line-height: 18px;
+              }
+            }
+            .earing-img-hp {
+              bottom: 180px;
+              left: 10px;
+              img {
+                height: 140px;
+                width: auto;
+              }
+            }
+            .earing-detail-hp {
+              bottom: 30px;
+              left: 25px;
+              h3 {
+                font-size: 14px;
+                line-height: 18px;
+                padding-bottom: 5px;
+              }
+              h2 {
+                font-size: 25px;
+                line-height: 28px;
+              }
+              h4 {
+                font-size: 14px;
+                line-height: 16px;
+              }
+              .btn-main-hp {
+                width: 100px;
+                line-height: 38px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 992px) and (max-width: 1199px) {
+    .newsletter-block-main-hp {
+      .newsletter-block-in-hp {
+        .left-block-hp {
+          max-width: 420px;
+          padding: 60px 20px;
+          .left-block-content-hp {
+            h2 {
+              font-size: 34px;
+              line-height: 42px;
+            }
+            p {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
+        .right-block-hp {
+          .right-block-img-hp {
+            height: 640px;
+            img {
+              object-fit: cover;
+            }
+            .right-block-title-hp {
+              top: 30px;
+              left: 15px;
+              h2 {
+                font-size: 26px;
+                line-height: 26px;
+              }
+              h4 {
+                font-size: 14px;
+                line-height: 18px;
+              }
+            }
+            .earing-img-hp {
+              bottom: 180px;
+              left: 10px;
+              img {
+                height: 140px;
+                width: auto;
+              }
+            }
+            .earing-detail-hp {
+              bottom: 30px;
+              left: 25px;
+              h3 {
+                font-size: 14px;
+                line-height: 18px;
+                padding-bottom: 5px;
+              }
+              h2 {
+                font-size: 25px;
+                line-height: 28px;
+              }
+              h4 {
+                font-size: 14px;
+                line-height: 16px;
+              }
+              .btn-main-hp {
+                width: 100px;
+                line-height: 38px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1200px) and (max-width: 1440px) {
+    .newsletter-block-main-hp {
+      .newsletter-block-in-hp {
+        .left-block-hp {
+          max-width: 520px;
+          padding: 144px 42px;
+          width: 100%;
+        }
+        .right-block-hp {
+          .right-block-img-hp {
+            height: 830px;
+            .right-block-title-hp {
+              left: 30px;
+              h4 {
+                font-size: 18px;
+                padding-bottom: 5px;
+              }
+              .kIsRvQ h2 {
+                font-size: 40px;
+              }
+            }
+            .earing-img-hp {
+              left: 0px;
+            }
+            .earing-detail-hp {
+              left: 35px;
+            }
+          }
+        }
+      }
+    }
   }
 `;

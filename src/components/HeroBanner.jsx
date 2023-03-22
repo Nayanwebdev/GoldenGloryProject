@@ -135,14 +135,14 @@ const Wrapper = styled.div`
               height: 100%;
               width: 100%;
               border-radius: 50%;
-              border: 1px solid #ffffff90;
+              border: 1px solid rgba(255, 255, 255, 0.6);
               left: 0;
               top: 0;
               animation: borderBubble 1s linear infinite;
             }
             @keyframes borderBubble {
               to {
-                scale: 1.5;
+                transform: scale(1.5);
                 opacity: 0.2;
               }
             }
@@ -245,7 +245,7 @@ const Wrapper = styled.div`
               width: 30px;
               font-size: 24px;
               line-height: 31px;
-              margin-bottom: -16px;
+              margin-bottom: -8px;
               margin-left: 0px;
             }
           }

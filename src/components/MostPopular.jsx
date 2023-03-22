@@ -74,7 +74,7 @@ export default function MostPopular() {
 
   return (
     <Wrapper>
-      <div className="mostpopular-block-main-hp" style={{ backgroundImage: `url(${background})`, backgroundSize: "cover" }}>
+      <div className="mostpopular-block-main-hp" style={{}}>
         <div className="container">
           <div className="mostpopular-block-in-hp">
             <div className="populat-title-hp">
@@ -100,19 +100,20 @@ export default function MostPopular() {
 }
 
 const Wrapper = styled.div`
-  padding-block: 120px 110px;
+  padding-block: 120px 120px;
   .mostpopular-block-main-hp {
     position: relative;
-    ::after {
+    &::after {
       content: "";
       position: absolute;
+      background: url(${background});
+      background-size: cover;
       width: 100%;
       height: 100%;
       right: 0;
-      top: 0px;
+      bottom: 0px;
       z-index: -1;
     }
-
     .mostpopular-block-in-hp {
       .populat-title-hp {
         display: flex;
@@ -124,7 +125,7 @@ const Wrapper = styled.div`
         }
       }
       .mostpopular-slider-hp {
-        padding-bottom: 100px;
+        padding-bottom: 60px;
         .slick-slider {
           .slick-arrow {
             display: none !important;
@@ -159,7 +160,7 @@ const Wrapper = styled.div`
             li {
               button {
                 padding: 0px;
-                ::before {
+                &::before {
                   font-size: 18px;
                   line-height: 22px;
                   color: #fff0e2;
@@ -169,9 +170,11 @@ const Wrapper = styled.div`
             }
           }
           .slick-active {
-            button:before {
-              opacity: 1;
-              color: #c18f61 !important;
+            button {
+              &::before {
+                opacity: 1;
+                color: #c18f61 !important;
+              }
             }
           }
         }
@@ -222,11 +225,6 @@ const Wrapper = styled.div`
           }
         }
       }
-      /* ::after {
-        height: 72%;
-        top: auto;
-        bottom: 120px;
-      } */
     }
   }
   @media (min-width: 992px) and (max-width: 1199px) {
@@ -277,7 +275,7 @@ const Wrapper = styled.div`
               display: block !important;
 
               z-index: 9;
-              ::before {
+              &::before {
                 color: var(--golden-color);
                 :hover {
                   color: var(--text-color);
@@ -288,7 +286,7 @@ const Wrapper = styled.div`
               left: -10px;
               top: 45%;
               :hover {
-                ::before {
+                &::before {
                   color: var(--text-color);
                 }
               }
@@ -297,7 +295,7 @@ const Wrapper = styled.div`
               right: -10px;
               top: 45%;
               :hover {
-                ::before {
+                &::before {
                   color: var(--text-color);
                 }
               }

@@ -129,7 +129,7 @@ const Wrapper = styled.div`
             position: relative;
             margin-bottom: -16px;
             margin-left: 0px;
-            ::after {
+            &::after {
               content: "";
               position: absolute;
               height: 100%;

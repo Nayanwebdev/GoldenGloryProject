@@ -68,7 +68,7 @@ const Wrapper = styled.div`
               color: var(--text-color);
             }
           }
-          ::before {
+          &::before {
             content: "";
             position: absolute;
             background: rgb(0 0 0 / 15%);
@@ -138,7 +138,7 @@ const Wrapper = styled.div`
                 color: var(--white-color);
               }
             }
-            ::before {
+            &::before {
               width: 100%;
             }
           }
@@ -198,7 +198,7 @@ const Wrapper = styled.div`
                 color: var(--white-color);
               }
             }
-            ::before {
+            &::before {
               width: 100%;
             }
           }
@@ -258,7 +258,7 @@ const Wrapper = styled.div`
                 color: var(--white-color);
               }
             }
-            ::before {
+            &::before {
               width: 100%;
             }
           }
@@ -317,7 +317,7 @@ const Wrapper = styled.div`
                 line-height: 22px;
               }
             }
-            ::before {
+            &::before {
               width: 82%;
             }
           }
@@ -374,7 +374,7 @@ const Wrapper = styled.div`
                 line-height: 22px;
               }
             }
-            ::before {
+            &::before {
               width: 88%;
             }
           }

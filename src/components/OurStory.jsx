@@ -12,13 +12,12 @@ export default function OurStory() {
       <div className="ourstory-block-main-hp">
         <div className="container">
           <div className="ourstory-block-in-hp">
-            <div className="left-block-hp" style={{}}>
+            <div className="left-block-hp">
               <TitleMain mainTitle="Tradition Cared For Since 1998" subTitle="Our Story" />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing Bibendum est ultricies integer.</p>
               <div className="story-btn-hp">
                 <Button btn_text="read more" class_name="dark-btn-hp" />
               </div>
-              {/* <div className="left-block-bg-hp" style={{ content: "", position: "absolute", width: "1200px", height: "710px", right: "-70px", bottom: "0px", zIndex: "-1" }}></div> */}
             </div>
             <div className="right-block-hp">
               <div className="right-main-img-hp">
@@ -102,7 +101,7 @@ const Wrapper = styled.div`
             padding-bottom: 25px;
             text-align: justify;
           }
-          ::after {
+          &::after {
             width: 100%;
             height: 100%;
             right: 0px;
@@ -142,7 +141,7 @@ const Wrapper = styled.div`
             padding-bottom: 25px;
             text-align: justify;
           }
-          ::after {
+          &::after {
             width: 100%;
             height: 100%;
             right: 0px;
@@ -180,7 +179,7 @@ const Wrapper = styled.div`
             padding-bottom: 35px;
             text-align: justify;
           }
-          ::after {
+          &::after {
             width: 600px;
             height: 100%;
             right: 0px;
@@ -209,7 +208,7 @@ const Wrapper = styled.div`
     .ourstory-block-main-hp {
       .ourstory-block-in-hp {
         .left-block-hp {
-          ::after {
+          &::after {
             width: 800px;
             height: 100%;
             right: -40px;
@@ -235,7 +234,7 @@ const Wrapper = styled.div`
     .ourstory-block-main-hp {
       .ourstory-block-in-hp {
         .left-block-hp {
-          ::after {
+          &::after {
             width: 800px;
             height: 100%;
             right: -40px;

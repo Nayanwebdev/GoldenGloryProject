@@ -103,6 +103,7 @@ const Wrapper = styled.div`
       .right-block-hp {
         max-width: 1142px;
         .right-block-img-hp {
+          width: auto;
           height: 960px;
           position: relative;
           img {

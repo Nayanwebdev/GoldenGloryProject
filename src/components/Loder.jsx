@@ -53,7 +53,7 @@ const Wrapper = styled.div`
             filter: blur(50px);
           }
         }
-        :after {
+        &:after {
           content: "";
           position: absolute;
           top: 10px;

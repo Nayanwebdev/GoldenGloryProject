@@ -107,11 +107,14 @@ const Wrapper = styled.div`
       content: "";
       position: absolute;
       background: url(${background});
+      background-repeat: no-repeat;
       background-size: cover;
-      width: 100%;
-      height: 100%;
+      height: 676px;
+      max-width: 1756px;
+      left: 0;
       right: 0;
-      bottom: 0px;
+      top: 0px;
+      margin-inline: auto;
       z-index: -1;
     }
     .mostpopular-block-in-hp {
@@ -196,6 +199,10 @@ const Wrapper = styled.div`
           padding-bottom: 40px;
         }
       }
+      &::after{
+        height: 80%;
+        width: 100%;
+      }
     }
   }
   @media (min-width: 576px) and (max-width: 767px) {
@@ -205,6 +212,10 @@ const Wrapper = styled.div`
         .mostpopular-slider-hp {
           padding-bottom: 40px;
         }
+      }
+      &::after{
+        height: 100%;
+        width: 100%;
       }
     }
   }
@@ -225,6 +236,10 @@ const Wrapper = styled.div`
           }
         }
       }
+      &::after{
+        height: 80%;
+        width: 100%;
+      }
     }
   }
   @media (min-width: 992px) and (max-width: 1199px) {
@@ -244,6 +259,11 @@ const Wrapper = styled.div`
           }
         }
       }
+      &::after{
+        height:500px;
+        width: 100%;
+        top: 30px;
+      }
     }
   }
   @media (min-width: 1200px) and (max-width: 1440px) {
@@ -262,6 +282,10 @@ const Wrapper = styled.div`
             font-size: 31px;
           }
         }
+      }
+      &::after{
+        height: 100%;
+        width: 100%;
       }
     }
   }

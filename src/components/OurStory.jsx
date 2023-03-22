@@ -102,10 +102,10 @@ const Wrapper = styled.div`
             text-align: justify;
           }
           &::after {
-            width: 100%;
-            height: 100%;
+            width: 440px;
+            height: 250px;
             right: 0px;
-            bottom: -40px;
+            bottom: -20px;
           }
         }
         .right-block-hp {
@@ -143,7 +143,7 @@ const Wrapper = styled.div`
           }
           &::after {
             width: 100%;
-            height: 100%;
+            height: 270px;
             right: 0px;
             bottom: -40px;
           }
@@ -180,9 +180,8 @@ const Wrapper = styled.div`
             text-align: justify;
           }
           &::after {
-            width: 600px;
+            width: 680px;
             height: 100%;
-            right: 0px;
             bottom: -50px;
           }
         }

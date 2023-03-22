@@ -71,7 +71,9 @@ export default function MostPopular() {
       },
     ],
   };
-
+  const showmore = () => {
+    alert("Show");
+  };
   return (
     <Wrapper>
       <div className="mostpopular-block-main-hp" style={{}}>
@@ -79,7 +81,7 @@ export default function MostPopular() {
           <div className="mostpopular-block-in-hp">
             <div className="populat-title-hp">
               <TitleMain mainTitle="Shophisticated Beauty On Sale" subTitle="most popular" />
-              <Button btn_text="explore more" class_name="dark-btn-hp" />
+              <Button btn_text="explore more" class_name="dark-btn-hp" onClick={() => showmore()} />
             </div>
             <div className="mostpopular-slider-hp">
               <Slider {...settings}>
@@ -137,20 +139,18 @@ const Wrapper = styled.div`
             padding-top: 10px;
             padding-inline: 10px;
             text-align: center;
-            .card-box-main-cb {
-              .card-img-cb {
-                background-color: white;
-                @media (min-width: 768px) and (max-width: 991px) {
-                  height: 260px;
-                }
+            .card-img-cb {
+              background-color: white;
+              @media (min-width: 768px) and (max-width: 991px) {
+                height: 260px;
               }
-              .card-content-cb {
-                h4 {
-                  font-size: 25px;
-                  line-height: 34px;
-                  @media (max-width: 991px) {
-                    font-size: 22px;
-                  }
+            }
+            .card-content-cb {
+              h4 {
+                font-size: 25px;
+                line-height: 34px;
+                @media (max-width: 991px) {
+                  font-size: 22px;
                 }
               }
             }
@@ -191,15 +191,19 @@ const Wrapper = styled.div`
         .populat-title-hp {
           flex-direction: column;
           align-items: flex-start;
+          padding-bottom: 0px;
           h2 {
             padding-bottom: 10px;
+          }
+          .btn-main-hp {
+            display: none;
           }
         }
         .mostpopular-slider-hp {
           padding-bottom: 40px;
         }
       }
-      &::after{
+      &::after {
         height: 80%;
         width: 100%;
       }
@@ -213,7 +217,7 @@ const Wrapper = styled.div`
           padding-bottom: 40px;
         }
       }
-      &::after{
+      &::after {
         height: 100%;
         width: 100%;
       }
@@ -236,7 +240,7 @@ const Wrapper = styled.div`
           }
         }
       }
-      &::after{
+      &::after {
         height: 80%;
         width: 100%;
       }
@@ -259,8 +263,8 @@ const Wrapper = styled.div`
           }
         }
       }
-      &::after{
-        height:500px;
+      &::after {
+        height: 500px;
         width: 100%;
         top: 30px;
       }
@@ -283,7 +287,7 @@ const Wrapper = styled.div`
           }
         }
       }
-      &::after{
+      &::after {
         height: 100%;
         width: 100%;
       }

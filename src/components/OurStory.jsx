@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import storyBg from "../assets/images/Ourstory.png";
+// import storyBg from "../assets/images/Ourstory.png";
 import storyRight from "../assets/images/Story_img.png";
 import storyRightSub from "../assets/images/Story_img_1.png";
 import Button from "./Button";
@@ -12,12 +12,13 @@ export default function OurStory() {
       <div className="ourstory-block-main-hp">
         <div className="container">
           <div className="ourstory-block-in-hp">
-            <div className="left-block-hp" style={{ backgroundImage: `url(${storyBg})`, backgroundSize: " contain" }}>
+            <div className="left-block-hp" style={{}}>
               <TitleMain mainTitle="Tradition Cared For Since 1998" subTitle="Our Story" />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing Bibendum est ultricies integer.</p>
               <div className="story-btn-hp">
                 <Button btn_text="read more" class_name="dark-btn-hp" />
               </div>
+              {/* <div className="left-block-bg-hp" style={{ content: "", position: "absolute", width: "1200px", height: "710px", right: "-70px", bottom: "0px", zIndex: "-1" }}></div> */}
             </div>
             <div className="right-block-hp">
               <div className="right-main-img-hp">
@@ -48,10 +49,12 @@ const Wrapper = styled.div`
           color: var(--black-color);
           padding-bottom: 50px;
         }
-        ::after {
+        &::after {
           content: "";
           position: absolute;
+          background-image: url('/Ourstory.png');
           background-repeat: no-repeat;
+          background-size: contain;
           width: 1200px;
           height: 710px;
           right: -70px;

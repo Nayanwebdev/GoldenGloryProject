@@ -1,7 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import styled from "styled-components";
+import PageBanner from "../components/PageBanner";
 export default function Blog() {
   return (
-    <div>Blog page</div>
-  )
+    <Wrapper>
+      <PageBanner pageTitle="Collection" />
+    </Wrapper>
+  );
 }
+
+const Wrapper = styled.div``;

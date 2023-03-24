@@ -3,20 +3,15 @@ import styled from "styled-components";
 import bannerImg from "../assets/images/pagebanner_img.png";
 import { Link } from "react-router-dom";
 
-export default function PageBanner({ pageTitle, pageLink }) {
-  const bradcrumb = [
-    { title: "home", href: "/" },
-    { title: "collection", href: "/collection" }
-  ];
+export default function PageBanner({  pageTitle,pageLink }) {
   return (
     <Wrapper>
       <div className="page-banner-allp" style={{ backgroundImage: `url(${bannerImg})` }}>
         <div className="page-banner-title-allp">
           <h2>{pageTitle}</h2>
           <div className="bradcrumb-allp">
-            {bradcrumb.map((link, i) => (
-              <Link to={link.href} key={i}>{link.title}</Link>
-            ))}
+            <Link to="/">Home</Link>
+            <Link to={{ pageLink }}>{pageLink}</Link>
           </div>
         </div>
       </div>

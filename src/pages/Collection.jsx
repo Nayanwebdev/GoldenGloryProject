@@ -27,21 +27,16 @@ export default function Collection() {
     { imgSrc: img10, title: "Pearls Earrings", price: "$123" },
   ];
 
-  const bradcrumb = [
-    { title: "home", href: "/" },
-    { title: "collection", href: "/collection" },
-  ];
-
   return (
     <Wrapper>
       <div className="collection-block-main-clp">
-        <PageBanner pageTitle="Collection" />
+        <PageBanner pageTitle="collection" pageLink="collection" />
         <div className="container">
           <div className="collection-block-in-clp">
             <div className="filter-block-clp"></div>
             <div className="collections-clp">
               {products.map((product, index) => (
-                <ProductCard key={index} imgSrc={product.imgSrc} title={product.title} price={product.price} />
+                <ProductCard key={index} imgSrc={product.imgSrc} title={product.title} price={product.price}  />
               ))}
             </div>
           </div>

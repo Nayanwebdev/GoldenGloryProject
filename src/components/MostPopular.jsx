@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "./Button";
 import TitleMain from "./TitleMain";
 import ProductCard from "./ProductCard";
+import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -81,7 +82,9 @@ export default function MostPopular() {
           <div className="mostpopular-block-in-hp">
             <div className="populat-title-hp">
               <TitleMain mainTitle="Shophisticated Beauty On Sale" subTitle="most popular" />
-              <Button btn_text="explore more" class_name="dark-btn-hp" onClick={() => showmore()} />
+              <NavLink className="btn-main-hp dark-btn-hp" to="/Collection" role="button" exact="true">
+                explore more
+              </NavLink>
             </div>
             <div className="mostpopular-slider-hp">
               <Slider {...settings}>

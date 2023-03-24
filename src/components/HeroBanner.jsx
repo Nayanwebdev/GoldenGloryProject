@@ -9,7 +9,7 @@ import productImg from "../assets/images/earring_img.png";
 
 const Wrapper = styled.div`
   .banner-block-hp {
-    background: #fff1e5;
+    background: var(--bg-color);
     overflow: hidden;
     .left-banner-hp {
       width: 50%;

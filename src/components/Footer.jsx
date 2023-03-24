@@ -42,9 +42,7 @@ export default function Footer() {
               <ul>
                 {services.map((link, index) => (
                   <li key={index}>
-                    <a href="#">
-                      {link}
-                    </a>
+                    <a href="#">{link}</a>
                   </li>
                 ))}
               </ul>
@@ -56,9 +54,7 @@ export default function Footer() {
               <ul>
                 {collections.map((link, index) => (
                   <li key={index}>
-                    <a href="#">
-                      {link}
-                    </a>
+                    <a href="#">{link}</a>
                   </li>
                 ))}
               </ul>
@@ -70,9 +66,7 @@ export default function Footer() {
               <ul>
                 {infos.map((link, index) => (
                   <li key={index}>
-                    <a href="#">
-                      {link}
-                    </a>
+                    <a href="#">{link}</a>
                   </li>
                 ))}
               </ul>
@@ -137,32 +131,168 @@ const Wrapper = styled.div`
           }
         }
       }
-    }
-    .footer-menu-hp {
-      width: 20%;
-      padding-top: 50px;
-      padding-left: 50px;
-      /* text-align: center; */
-      .title-hp {
-        h2 {
-          font-size: 28px;
-          line-height: 36px;
-          color: var(--golden-color);
-          padding-bottom: 40px;
+      .footer-menu-hp {
+        width: 20%;
+        padding-top: 50px;
+        padding-left: 50px;
+        /* text-align: center; */
+        .title-hp {
+          h2 {
+            font-size: 28px;
+            line-height: 36px;
+            color: var(--golden-color);
+            padding-bottom: 40px;
+          }
         }
-      }
-      ul {
-        li {
-          /* text-align: left; */
-          padding-bottom: 15px;
-          a {
-            font-size: 18px;
-            line-height: 24px;
-            display: inline-block;
-            color: var(--text-color);
+        ul {
+          li {
+            /* text-align: left; */
+            padding-bottom: 15px;
+            a {
+              font-size: 18px;
+              line-height: 24px;
+              display: inline-block;
+              color: var(--text-color);
+            }
           }
         }
       }
     }
+  }
+  @media (min-width: 0px) and (max-width: 575px) {
+    .footer-top-hp {
+      .footer-top-in-hp {
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+        .footer-about-hp {
+          width: 100%;
+          padding: 25px 18px 22px;
+          .logo-hp {
+            .nav-brand-ggp {
+              max-width: auto;
+              margin-bottom: 16px;
+              img {
+                width: 30px;
+                height: 30px;
+              }
+              h2 {
+                font-size: 20px;
+                line-height: 22px;
+                margin-left: 8px;
+              }
+            }
+          }
+          p {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+          }
+          .social-media {
+            gap: 10px;
+            li {
+              a {
+                width: 35px;
+                height: 35px;
+                img{
+                  height: 14px;
+                }
+              }
+            }
+          }
+        }
+        .footer-menu-hp {
+          width: 50%;
+          padding-top: 20px;
+          padding-left: 20px;
+          .title-hp {
+            h2 {
+              font-size: 25px;
+              line-height: 28px;
+              padding-bottom: 10px;
+            }
+          }
+          ul {
+            li {
+              padding-bottom: 6px;
+              a {
+                font-size: 16px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .footer-top-hp {
+      .footer-top-in-hp {
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+        .footer-about-hp {
+          width: 100%;
+          padding: 25px 18px 22px;
+          .logo-hp {
+            .nav-brand-ggp {
+              max-width: auto;
+              margin-bottom: 16px;
+              img {
+                width: 30px;
+                height: 30px;
+              }
+              h2 {
+                font-size: 20px;
+                line-height: 22px;
+                margin-left: 8px;
+              }
+            }
+          }
+          p {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: justify;
+          }
+          .social-media {
+            gap: 10px;
+            li {
+              a {
+                width: 35px;
+                height: 35px;
+                img{
+                  height: 14px;
+                }
+              }
+            }
+          }
+        }
+        .footer-menu-hp {
+          width: 50%;
+          padding-top: 20px;
+          padding-left: 20px;
+          .title-hp {
+            h2 {
+              font-size: 25px;
+              line-height: 28px;
+              padding-bottom: 10px;
+            }
+          }
+          ul {
+            li {
+              padding-bottom: 6px;
+              a {
+                font-size: 16px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+  }
+  @media (min-width: 1200px) and (max-width: 1440px) {
   }
 `;

@@ -41,8 +41,8 @@ export default function Footer() {
               </div>
               <ul>
                 {services.map((link, index) => (
-                  <li>
-                    <a href="#" key={index}>
+                  <li key={index}>
+                    <a href="#">
                       {link}
                     </a>
                   </li>
@@ -55,8 +55,8 @@ export default function Footer() {
               </div>
               <ul>
                 {collections.map((link, index) => (
-                  <li>
-                    <a href="#" key={index}>
+                  <li key={index}>
+                    <a href="#">
                       {link}
                     </a>
                   </li>
@@ -69,8 +69,8 @@ export default function Footer() {
               </div>
               <ul>
                 {infos.map((link, index) => (
-                  <li>
-                    <a href="#" key={index}>
+                  <li key={index}>
+                    <a href="#">
                       {link}
                     </a>
                   </li>

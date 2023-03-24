@@ -40,9 +40,11 @@ export default function Footer() {
                 <h2>socials</h2>
               </div>
               <ul>
-                {services.map((link, index) => (
-                  <li key={index}>
-                    <a href="#">{link}</a>
+                {services.map((link,id) => (
+                  <li>
+                    <a href="#" key={id}>
+                      {link}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -52,9 +54,11 @@ export default function Footer() {
                 <h2>collection</h2>
               </div>
               <ul>
-                {collections.map((link, index) => (
-                  <li key={index}>
-                    <a href="#">{link}</a>
+                {collections.map((link,id) => (
+                  <li>
+                    <a href="#" key={id}>
+                      {link}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -64,9 +68,11 @@ export default function Footer() {
                 <h2>more info</h2>
               </div>
               <ul>
-                {infos.map((link, index) => (
-                  <li key={index}>
-                    <a href="#">{link}</a>
+                {infos.map((link,id) => (
+                  <li>
+                    <a href="#" key={id}>
+                      {link}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -193,7 +199,7 @@ const Wrapper = styled.div`
               a {
                 width: 35px;
                 height: 35px;
-                img{
+                img {
                   height: 14px;
                 }
               }
@@ -258,7 +264,7 @@ const Wrapper = styled.div`
               a {
                 width: 35px;
                 height: 35px;
-                img{
+                img {
                   height: 14px;
                 }
               }

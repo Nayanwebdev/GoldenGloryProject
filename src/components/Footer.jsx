@@ -5,12 +5,16 @@ import tweetIcon from "../assets/images/footer_tweet.svg";
 import dribleIcon from "../assets/images/drible_icon.svg";
 import fbIcon from "../assets/images/fb_footer.svg";
 import Logo from "../assets/images/logo_icon.png";
+import paymentImg1 from "../assets/images/payment_method_1.png";
+import paymentImg2 from "../assets/images/payment_method_2.png";
+import paymentImg3 from "../assets/images/payment_method_3.png";
 
 export default function Footer() {
   const socials = [instaIcon, tweetIcon, dribleIcon, fbIcon];
   const services = ["about us", "contact us", "pages"];
   const collections = ["wedding", "summer", "engagement"];
   const infos = ["FAQ", "privacy policy", "terms & condition"];
+  const payments = [paymentImg1, paymentImg2, paymentImg3];
 
   return (
     <Wrapper>
@@ -40,11 +44,9 @@ export default function Footer() {
                 <h2>socials</h2>
               </div>
               <ul>
-                {services.map((link,id) => (
+                {services.map((link, id) => (
                   <li key={id}>
-                    <a href="#">
-                      {link}
-                    </a>
+                    <a href="#">{link}</a>
                   </li>
                 ))}
               </ul>
@@ -54,11 +56,9 @@ export default function Footer() {
                 <h2>collection</h2>
               </div>
               <ul>
-                {collections.map((link,id) => (
+                {collections.map((link, id) => (
                   <li key={id}>
-                    <a href="#">
-                      {link}
-                    </a>
+                    <a href="#">{link}</a>
                   </li>
                 ))}
               </ul>
@@ -68,20 +68,31 @@ export default function Footer() {
                 <h2>more info</h2>
               </div>
               <ul>
-                {infos.map((link,id) => (
+                {infos.map((link, id) => (
                   <li key={id}>
-                    <a href="#">
-                      {link}
-                    </a>
+                    <a href="#">{link}</a>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
         </div>
-        <div className="footer-bottom-hp">
-          <div className="container">
-            <div className="footer-bottom-in-hp"></div>
+      </div>
+      <div className="footer-bottom-hp">
+        <div className="container">
+          <div className="footer-bottom-in-hp">
+            <div className="copyright-hp">
+              <p>© 2021 golden glory. All Right Reserved.</p>
+            </div>
+            <div className="payment-method-hp">
+              <ul>
+                {payments.map((pay, i) => (
+                  <li key={i}>
+                    <img src={pay} alt="pay-img" />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -165,6 +176,42 @@ const Wrapper = styled.div`
       }
     }
   }
+  .footer-bottom-hp {
+    background: var(--text-color);
+    .footer-bottom-in-hp {
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-inline: 50px;
+      .copyright-hp {
+        p {
+          font-size: 15px;
+          line-height: 20px;
+          color: var(--white-color);
+        }
+      }
+      .payment-method-hp {
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 15px;
+          li {
+            min-width: 66px;
+            height: 35px;
+            text-align: center;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background: rgb(255, 255, 255, 0.72);
+            img {
+              height: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
   @media (min-width: 0px) and (max-width: 575px) {
     .footer-top-hp {
       .footer-top-in-hp {
@@ -223,6 +270,29 @@ const Wrapper = styled.div`
               a {
                 font-size: 16px;
                 line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom-hp {
+      .footer-bottom-in-hp {
+        height: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0px;
+        .copyright-hp {
+          p {
+            font-size: 14px;
+          }
+        }
+        .payment-method-hp {
+          ul {
+            li {
+              padding-inline: 8px;
+              img {
+                height: 18px;
               }
             }
           }
@@ -294,11 +364,147 @@ const Wrapper = styled.div`
         }
       }
     }
+    .footer-bottom-hp {
+      .footer-bottom-in-hp {
+        gap: 10px;
+        padding: 0px;
+        .copyright-hp {
+          p {
+            font-size: 14px;
+          }
+        }
+        .payment-method-hp {
+          ul {
+            gap: 5px;
+            li {
+              min-width: 60px;
+              img {
+                height: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 768px) and (max-width: 991px) {
+    .footer-top-hp {
+      .footer-top-in-hp {
+        .footer-about-hp {
+          padding: 30px 25px;
+          .logo-hp {
+            .nav-brand-ggp {
+              max-width: 220px;
+              margin-bottom: 15px;
+              img {
+                width: 40px;
+                height: 40px;
+              }
+              h2 {
+                font-size: 26px;
+              }
+            }
+          }
+          p {
+            font-size: 15px;
+            line-height: 22px;
+          }
+          .social-media {
+            li {
+              a {
+                width: 34px;
+                height: 34px;
+                img {
+                  height: 15px;
+                  width: 15px;
+                }
+              }
+            }
+          }
+        }
+        .footer-menu-hp {
+          padding-top: 35px;
+          padding-left: 18px;
+          ul {
+            li {
+              padding-bottom: 10px;
+              a {
+                font-size: 17px;
+                line-height: 20px;
+              }
+            }
+          }
+          .title-hp {
+            h2 {
+              font-size: 26px;
+              line-height: 30px;
+              padding-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom-hp {
+      .footer-bottom-in-hp {
+        padding-inline: 20px;
+        .payment-method-hp {
+          ul {
+            gap: 10px;
+          }
+        }
+      }
+    }
   }
   @media (min-width: 992px) and (max-width: 1199px) {
+    .footer-top-hp {
+      .footer-top-in-hp {
+        .footer-about-hp {
+          padding: 40px 40px 30px;
+          .logo-hp {
+            .nav-brand-ggp {
+              margin-bottom: 20px;
+              img {
+                width: 50px;
+                height: 50px;
+              }
+              h2 {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+        .footer-menu-hp {
+          padding-left: 26px;
+          .title-hp {
+            h2 {
+              padding-bottom: 30px;
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom-hp {
+      .footer-bottom-in-hp {
+        padding-inline: 40px 20px;
+        .payment-method-hp {
+          ul {
+            gap: 10px;
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1200px) and (max-width: 1440px) {
+    .footer-top-hp {
+      .footer-top-in-hp {
+        .footer-about-hp {
+          padding: 50px 50px 32px;
+        }
+        .footer-menu-hp {
+          padding-top: 58px;
+          padding-left: 40px;
+        }
+      }
+    }
   }
 `;

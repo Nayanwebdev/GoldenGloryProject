@@ -156,7 +156,7 @@ const Wrapper = styled.div`
       border-top-left-radius: 110px;
       .img-block {
         img {
-          width: 80%;
+          width: 70%;
           margin-inline: auto;
         }
       }

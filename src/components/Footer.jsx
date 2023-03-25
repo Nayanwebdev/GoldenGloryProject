@@ -27,8 +27,8 @@ export default function Footer() {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
               <ul className="social-media">
                 {socials.map((icon, index) => (
-                  <li>
-                    <a href="#" key={index}>
+                  <li key={index}>
+                    <a href="#">
                       <img src={icon} alt="social-media" />
                     </a>
                   </li>
@@ -41,8 +41,8 @@ export default function Footer() {
               </div>
               <ul>
                 {services.map((link,id) => (
-                  <li>
-                    <a href="#" key={id}>
+                  <li key={id}>
+                    <a href="#">
                       {link}
                     </a>
                   </li>
@@ -55,8 +55,8 @@ export default function Footer() {
               </div>
               <ul>
                 {collections.map((link,id) => (
-                  <li>
-                    <a href="#" key={id}>
+                  <li key={id}>
+                    <a href="#">
                       {link}
                     </a>
                   </li>
@@ -69,8 +69,8 @@ export default function Footer() {
               </div>
               <ul>
                 {infos.map((link,id) => (
-                  <li>
-                    <a href="#" key={id}>
+                  <li key={id}>
+                    <a href="#">
                       {link}
                     </a>
                   </li>

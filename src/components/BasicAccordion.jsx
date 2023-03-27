@@ -65,6 +65,9 @@ const Wrapper = styled.div`
   .accordion-item {
     border: 0px;
     border-bottom: 1px solid var(--text-color);
+    :last-of-type {
+      border-radius: 0px;
+    }
   }
   .accordion__content {
     overflow: hidden;
@@ -88,13 +91,64 @@ const Wrapper = styled.div`
         background-size: contain;
       }
     }
+    .accordion-body {
+      padding-inline: 10px;
+    }
   }
   @media (min-width: 576px) and (max-width: 767px) {
+    .accordion-button {
+      font-size: 20px;
+      height: 50px;
+      padding-inline: 10px 16px;
+      ::after {
+        width: 12px;
+        height: 8px;
+        background-size: contain;
+      }
+    }
+    .accordion-body {
+      padding-inline: 10px;
+    }
   }
   @media (min-width: 768px) and (max-width: 991px) {
+    .accordion-button {
+      font-size: 20px;
+      height: 50px;
+      padding-inline: 10px 16px;
+      ::after {
+        width: 12px;
+        height: 8px;
+        background-size: contain;
+      }
+    }
+    .accordion-body {
+      padding-inline: 10px;
+    }
   }
   @media (min-width: 992px) and (max-width: 1199px) {
+    .accordion-button {
+      font-size: 24px;
+      height: 60px;
+      padding-inline: 6px 10px;
+      ::after {
+        width: 12px;
+        height: 8px;
+        background-size: contain;
+      }
+    }
+    .accordion-body {
+      padding-inline: 10px;
+    }
   }
   @media (min-width: 1200px) and (max-width: 1440px) {
+    .accordion-button {
+      font-size: 26px;
+      height: 70px;
+    }
+    .accordion-button::after {
+      width: 17px;
+      height: 10px;
+      background-size: contain;
+    }
   }
 `;

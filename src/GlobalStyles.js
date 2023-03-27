@@ -144,7 +144,7 @@ img {
     }
     p {
     font-size: 15px;
-    line-height: 18px;
+    line-height: 20px;
 }
     .btn-main-hp {
         width: 140px;
@@ -165,6 +165,10 @@ img {
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
         max-width: 720px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 22px;
     }
     .btn-main-hp {
         width: 156px;

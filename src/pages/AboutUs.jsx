@@ -4,6 +4,7 @@ import BasicAccordion from "../components/BasicAccordion";
 import PageBanner from "../components/PageBanner";
 import TitleMain from "../components/TitleMain";
 import aboutStoryRightBg from "../assets/images/about_story_right.png";
+import WhyChoose from "../components/WhyChoose";
 
 export default function AboutUs() {
   const accordionData = [
@@ -33,6 +34,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
+      <WhyChoose />
     </Wrapper>
   );
 }
@@ -91,7 +93,6 @@ const Wrapper = styled.div`
           position: static;
           gap: 26px;
           .left-block-abp {
-            position: relative;
             width: 100%;
             order: 1;
             padding-right: 0px;
@@ -100,9 +101,7 @@ const Wrapper = styled.div`
               padding-bottom: 20px;
             }
             ::before {
-              height: 442px;
-              width: 324px;
-              right: 0;
+              display: none;
             }
           }
           .right-block-abp {
@@ -119,11 +118,117 @@ const Wrapper = styled.div`
     }
   }
   @media (min-width: 576px) and (max-width: 767px) {
+    padding-bottom: 40px;
+    .about-block-main-abp {
+      .about-block-in-abp {
+        .our-story-section-abp {
+          flex-wrap: wrap;
+          padding-block: 0px;
+          position: static;
+          gap: 26px;
+          .left-block-abp {
+            width: 100%;
+            order: 1;
+            padding-right: 0px;
+            p {
+              max-width: 100%;
+              padding-bottom: 20px;
+            }
+            ::before {
+              display: none;
+            }
+          }
+          .right-block-abp {
+            width: 100%;
+            order: 0;
+            .right-img-abp {
+              max-width: 256px;
+              max-height: 298px;
+              margin-inline: auto;
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 768px) and (max-width: 991px) {
+    .about-block-main-abp {
+      .about-block-in-abp {
+        .our-story-section-abp {
+          padding-block: 0px;
+          .left-block-abp {
+            padding-right: 0px;
+            p {
+              max-width: 100%;
+              padding-bottom: 20px;
+            }
+            ::before {
+              height: 340px;
+              width: 222px;
+              right: 90%;
+              top: 50px;
+            }
+          }
+          .right-block-abp {
+            margin-block: auto;
+            .right-img-abp {
+              max-width: 256px;
+              max-height: 298px;
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 992px) and (max-width: 1199px) {
+    .about-block-main-abp {
+      .about-block-in-abp {
+        .our-story-section-abp {
+          padding-block: 0px;
+          .left-block-abp {
+            padding-right: 0px;
+            p {
+              max-width: 100%;
+              padding-bottom: 20px;
+            }
+            ::before {
+              height: 412px;
+              width: 272px;
+            }
+          }
+          .right-block-abp {
+            .right-img-abp {
+              max-width: 372px;
+              max-height: 434px;
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1200px) and (max-width: 1440px) {
+    .about-block-main-abp {
+      .about-block-in-abp {
+        .our-story-section-abp {
+          .left-block-abp {
+            padding-right: 20px;
+            p {
+              max-width: 100%;
+              padding-bottom: 20px;
+            }
+            ::before {
+              height: 480px;
+              width: 320px;
+            }
+          }
+          .right-block-abp {
+            .right-img-abp {
+              max-width: 409px;
+              max-height: 477px;
+            }
+          }
+        }
+      }
+    }
   }
 `;

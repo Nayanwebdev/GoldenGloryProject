@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../components/Button";
 import deliveryImg from "../assets/images/delivery_done_icon.svg";
 import returnImg from "../assets/images/return_icon.svg";
 import supportImg from "../assets/images/support_icon.svg";
 import banneImg from "../assets/images/b1.png";
 import productImg from "../assets/images/earring_img.png";
+import { NavLink } from "react-router-dom";
 
 const Wrapper = styled.div`
   .banner-block-hp {
@@ -34,7 +34,6 @@ const Wrapper = styled.div`
         display: flex;
         gap: 30px;
         padding-bottom: 128px;
-
       }
       .customer-support-hp {
         display: flex;
@@ -638,8 +637,12 @@ export default function HeroBanner() {
               <h1>Parisian GlamBridge</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing Bibendum est ultricies integer.</p>
               <div className="btn-group-hp">
-                <Button btn_text="buy more"  class_name="dark-btn-hp" />
-                <Button btn_text="read more"  class_name="light-btn-hp" />
+                <NavLink className="btn-main-hp dark-btn-hp" to="/" role="button" exact="true">
+                  buy more
+                </NavLink>
+                <NavLink className="btn-main-hp light-btn-hp" to="/" role="button" exact="true">
+                  read more
+                </NavLink>
               </div>
               <div className="customer-support-hp">
                 <div className="customer-support-box-hp delivery-hp">

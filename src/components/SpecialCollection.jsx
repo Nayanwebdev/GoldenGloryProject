@@ -1,16 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import CollectionImg from "../assets/images/Special_collection.png";
-import Button from "./Button";
 import TitleMain from "./TitleMain";
+import { NavLink } from "react-router-dom";
 
 export default function SpecialCollection() {
   return (
     <Wrapper>
-      <div className="special-collection-block-hp" style={{backgroundImage: `url(${CollectionImg})`, backgroundSize:'cover'}}>
+      <div className="special-collection-block-hp" style={{ backgroundImage: `url(${CollectionImg})`, backgroundSize: "cover" }}>
         <div className="collection-content-hp">
           <TitleMain mainTitle="Special Handpicked Diamond Products Collection" subTitle="Diamond collection" />
-          <Button btn_text="buy now" class_name="dark-btn-hp" />
+          <NavLink className="btn-main-hp dark-btn-hp" to="/" role="button" exact="true">
+            buy now
+          </NavLink>
         </div>
       </div>
     </Wrapper>

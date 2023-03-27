@@ -133,17 +133,22 @@ const Wrapper = styled.div`
         }
         .social-media {
           display: flex;
-          gap: 20px;
+          gap: 16px;
           li {
             a {
               width: 44px;
               height: 44px;
               border: 0;
+              border: 1px solid transparent;
               display: flex;
               align-items: center;
               justify-content: center;
               border-radius: 50px;
               background: var(--bg-color);
+              :hover {
+                border-color: var(--text-color);
+                transform: translateY(-2px);
+              }
             }
           }
         }
@@ -152,7 +157,6 @@ const Wrapper = styled.div`
         width: 20%;
         padding-top: 50px;
         padding-left: 50px;
-        /* text-align: center; */
         .title-hp {
           h2 {
             font-size: 28px;
@@ -163,13 +167,16 @@ const Wrapper = styled.div`
         }
         ul {
           li {
-            /* text-align: left; */
             padding-bottom: 15px;
             a {
               font-size: 18px;
               line-height: 24px;
               display: inline-block;
               color: var(--text-color);
+              :hover {
+                color: var(--golden-color);
+                transform: translateY(-4px);
+              }
             }
           }
         }

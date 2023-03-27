@@ -142,9 +142,13 @@ img {
     .container {
         width: 100%;
     }
+    p {
+    font-size: 15px;
+    line-height: 18px;
+}
     .btn-main-hp {
         width: 140px;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 50px;
     }
 }

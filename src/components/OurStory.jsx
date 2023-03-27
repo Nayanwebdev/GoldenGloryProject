@@ -3,8 +3,8 @@ import styled from "styled-components";
 // import storyBg from "../assets/images/Ourstory.png";
 import storyRight from "../assets/images/Story_img.png";
 import storyRightSub from "../assets/images/Story_img_1.png";
-import Button from "./Button";
 import TitleMain from "./TitleMain";
+import { NavLink } from "react-router-dom";
 
 export default function OurStory() {
   return (
@@ -16,7 +16,9 @@ export default function OurStory() {
               <TitleMain mainTitle="Tradition Cared For Since 1998" subTitle="Our Story" />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing Bibendum est ultricies integer.</p>
               <div className="story-btn-hp">
-                <Button btn_text="read more" class_name="dark-btn-hp" />
+                <NavLink className="btn-main-hp dark-btn-hp" to="/" role="button" exact="true">
+                  read more
+                </NavLink>
               </div>
             </div>
             <div className="right-block-hp">
@@ -51,7 +53,7 @@ const Wrapper = styled.div`
         &::after {
           content: "";
           position: absolute;
-          background-image: url('/Ourstory.png');
+          background-image: url("/Ourstory.png");
           background-repeat: no-repeat;
           background-size: contain;
           width: 1200px;

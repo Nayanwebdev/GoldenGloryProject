@@ -79,10 +79,11 @@ const Wrapper = styled.div`
       flex-direction: column;
       gap: 10px;
       padding: 15px 20px;
-      border-radius: 8px;
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
       .img-block {
         img {
-          width: 70%;
+          width: 60%;
           margin-inline: auto;
         }
       }
@@ -116,7 +117,8 @@ const Wrapper = styled.div`
       flex-direction: column;
       gap: 10px;
       padding: 15px 25px;
-      border-radius: 8px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
       .img-block {
         img {
           width: 80%;

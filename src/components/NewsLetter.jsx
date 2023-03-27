@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import TitleMain from "../components/TitleMain";
 import styled from "styled-components";
 import mewsLetterImg from "../assets/images/newsletter_img.png";
@@ -36,7 +37,9 @@ export default function NewsLetter() {
                 <h3>earrings</h3>
                 <h2>leaf daimonds</h2>
                 <h4 className="price-hp">-$599.00</h4>
-                <Button btn_text="buy now" class_name="dark-btn-hp" />
+                <NavLink className="btn-main-hp dark-btn-hp" to="/Collection" role="button" exact="true">
+                  buy now
+                </NavLink>
               </div>
             </div>
           </div>

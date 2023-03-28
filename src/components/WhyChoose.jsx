@@ -22,9 +22,9 @@ export default function WhyChoose() {
           <TitleMain mainTitle="Why Choose Golden Glory?" />
           <div className="why-choose-in-wcp">
             <div className="left-block-wcp">
-                <div className="left-block-video-wcp">
-                    <img src={wcuImg} alt="wcus_video" />
-                </div>
+              <div className="left-block-video-wcp">
+                <img src={wcuImg} alt="wcus_video" />
+              </div>
             </div>
             <div className="right-block-wcp">
               <div className="right-block-content-wcp">
@@ -57,17 +57,18 @@ const Wrapper = styled.div`
       .left-block-wcp {
         width: 50%;
         position: relative;
-        .left-block-video-wcp{
-            max-width: 660px;
-            margin-left: auto;
-            position: absolute;
-            bottom: 30px;
-            left: 0;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+        z-index: 9;
+        .left-block-video-wcp {
+          max-width: 660px;
+          margin-left: auto;
+          position: absolute;
+          bottom: 30px;
+          left: 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
       .right-block-wcp {
@@ -75,7 +76,7 @@ const Wrapper = styled.div`
         .right-block-content-wcp {
           width: 890px;
           position: relative;
-          z-index: -1;
+          /* z-index: -1; */
           padding: 76px 60px 76px 260px;
           background: var(--bg-color);
           display: grid;
@@ -83,14 +84,14 @@ const Wrapper = styled.div`
           gap: 70px;
           margin-left: -214px;
           .detail-box-wcp {
-              padding-inline: 20px;
-              text-align: center;
-              :nth-child(odd) {
-                padding-left: 0px;
-              }
-              :nth-child(even) {
-                padding-right: 0px;
-              }
+            padding-inline: 20px;
+            text-align: center;
+            :nth-child(odd) {
+              padding-left: 0px;
+            }
+            :nth-child(even) {
+              padding-right: 0px;
+            }
             .icon-wcp {
               margin-bottom: 25px;
               height: 77px;
@@ -105,8 +106,223 @@ const Wrapper = styled.div`
               padding-bottom: 10px;
             }
             p {
-              font-size: 16px;
-              line-height: 22px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 0px) and (max-width: 575px) {
+    padding-block: 40px;
+    .why-choose-block-main-wcp {
+      .why-choose-in-wcp {
+        flex-wrap: wrap;
+        .left-block-wcp {
+          width: 100%;
+          .left-block-video-wcp {
+            width: 100%;
+            margin-left: auto;
+            position: relative;
+            bottom: 0;
+          }
+        }
+        .right-block-wcp {
+          width: 100%;
+          .right-block-content-wcp {
+            width: 100%;
+            padding: 30px 0px 0px;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            margin-left: 0px;
+            background: inherit;
+            .detail-box-wcp {
+              padding: 25px 20px !important;
+              background: var(--bg-color);
+              .icon-wcp {
+                margin-bottom: 15px;
+                height: 50px;
+                img {
+                  width: 40px;
+                }
+              }
+              h2 {
+                font-size: 20px;
+                line-height: 22px;
+                padding-bottom: 10px;
+              }
+              p {
+                font-size: 16px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    padding-block: 40px;
+    .why-choose-block-main-wcp {
+      .why-choose-in-wcp {
+        flex-wrap: wrap;
+        .left-block-wcp {
+          width: 100%;
+          .left-block-video-wcp {
+            width: 100%;
+            margin-left: auto;
+            position: relative;
+            bottom: 0;
+          }
+        }
+        .right-block-wcp {
+          width: 100%;
+          .right-block-content-wcp {
+            width: 100%;
+            padding: 30px 0px 0px;
+            gap: 10px;
+            margin-left: 0px;
+            background: inherit;
+            .detail-box-wcp {
+              padding: 25px 20px !important;
+              background: var(--bg-color);
+              .icon-wcp {
+                margin-bottom: 15px;
+                height: 57px;
+                img {
+                  height: 45px;
+                  object-fit: contain;
+                }
+              }
+              h2 {
+                font-size: 22px;
+                line-height: 24px;
+                padding-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-block: 80px;
+    .why-choose-block-main-wcp {
+      .why-choose-in-wcp {
+        flex-wrap: wrap;
+        .left-block-wcp {
+          width: 100%;
+          .left-block-video-wcp {
+            max-width: 100%;
+            margin-left: auto;
+            position: relative;
+            bottom: 0;
+          }
+        }
+        .right-block-wcp {
+          width: 100%;
+          .right-block-content-wcp {
+            width: 100%;
+            padding: 40px 0px 0px;
+            gap: 20px;
+            margin-left: 0px;
+            background: inherit;
+            .detail-box-wcp {
+              padding: 25px 20px !important;
+              background: var(--bg-color);
+              .icon-wcp {
+                margin-bottom: 15px;
+                height: 57px;
+                img {
+                  height: 45px;
+                  object-fit: contain;
+                }
+              }
+              h2 {
+                font-size: 22px;
+                line-height: 24px;
+                padding-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    padding-block: 80px;
+    .why-choose-block-main-wcp {
+      .why-choose-in-wcp {
+        flex-wrap: wrap;
+        .left-block-wcp {
+          width: 100%;
+          .left-block-video-wcp {
+            margin-inline: auto;
+            position: relative;
+            bottom: 0;
+          }
+        }
+        .right-block-wcp {
+          width: 100%;
+          .right-block-content-wcp {
+            width: 100%;
+            padding: 220px 60px 76px 76px;
+            gap: 20px;
+            margin-left: 0px;
+            margin-top: -200px;
+            .detail-box-wcp {
+              padding: 25px 20px !important;
+              box-shadow: 0 0 10px var(--golden-color);
+              .icon-wcp {
+                margin-bottom: 15px;
+                height: 57px;
+                img {
+                  height: 45px;
+                  object-fit: contain;
+                }
+              }
+              h2 {
+                font-size: 22px;
+                line-height: 24px;
+                padding-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    padding-block: 80px;
+    .why-choose-block-main-wcp {
+      .why-choose-in-wcp {
+        .left-block-wcp {
+          .left-block-video-wcp {
+            max-width: 510px;
+            bottom: 50px;
+          }
+        }
+        .right-block-wcp {
+          .right-block-content-wcp {
+            width: 770px;
+            padding: 50px 40px 50px 210px;
+            gap: 20px;
+            .detail-box-wcp {
+              padding: 25px 20px !important;
+              box-shadow: 0 0 10px var(--golden-color);
+              .icon-wcp {
+                margin-bottom: 15px;
+                height: 57px;
+                img {
+                  height: 45px;
+                  object-fit: contain;
+                }
+              }
+              h2 {
+                font-size: 22px;
+                line-height: 24px;
+                padding-bottom: 10px;
+              }
             }
           }
         }

@@ -44,7 +44,7 @@ const Wrapper = styled.div`
     color: var(--golden-color);
     height: 80px;
     padding-block: 0px;
-    padding-left: 0px;
+    padding-left: 10px;
     :focus {
       outline: 0;
       border: 0;
@@ -55,6 +55,9 @@ const Wrapper = styled.div`
       background-color: var(--bg-color);
     }
     ::after {
+      width: 18px;
+      height: 12px;
+      background-size: contain;
       color: var(--golden-color);
       background-image: url("/angle_down.svg");
     }
@@ -88,7 +91,6 @@ const Wrapper = styled.div`
       ::after {
         width: 12px;
         height: 8px;
-        background-size: contain;
       }
     }
     .accordion-body {
@@ -103,7 +105,6 @@ const Wrapper = styled.div`
       ::after {
         width: 12px;
         height: 8px;
-        background-size: contain;
       }
     }
     .accordion-body {
@@ -118,7 +119,6 @@ const Wrapper = styled.div`
       ::after {
         width: 12px;
         height: 8px;
-        background-size: contain;
       }
     }
     .accordion-body {
@@ -133,7 +133,6 @@ const Wrapper = styled.div`
       ::after {
         width: 12px;
         height: 8px;
-        background-size: contain;
       }
     }
     .accordion-body {
@@ -144,11 +143,6 @@ const Wrapper = styled.div`
     .accordion-button {
       font-size: 26px;
       height: 70px;
-    }
-    .accordion-button::after {
-      width: 17px;
-      height: 10px;
-      background-size: contain;
     }
   }
 `;

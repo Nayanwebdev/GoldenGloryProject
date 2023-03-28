@@ -33,6 +33,7 @@ h6 {
 h1,
 h2{
     font-family: "Sorts Mill Goudy", sans-serif;
+    color: var(--text-color);
 }
 
 p {
@@ -160,6 +161,10 @@ img {
         width: 150px;
         font-size: 15px;
         line-height: 52px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {

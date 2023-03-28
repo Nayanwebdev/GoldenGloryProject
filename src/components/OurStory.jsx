@@ -16,7 +16,7 @@ export default function OurStory() {
               <TitleMain mainTitle="Tradition Cared For Since 1998" subTitle="Our Story" />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing Bibendum est ultricies integer.</p>
               <div className="story-btn-hp">
-                <NavLink className="btn-main-hp dark-btn-hp" to="/" role="button" exact="true">
+                <NavLink className="btn-main-hp dark-btn-hp" to="/AboutUs" role="button" exact="true">
                   read more
                 </NavLink>
               </div>

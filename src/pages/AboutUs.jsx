@@ -5,6 +5,8 @@ import PageBanner from "../components/PageBanner";
 import TitleMain from "../components/TitleMain";
 import aboutStoryRightBg from "../assets/images/about_story_right.png";
 import WhyChoose from "../components/WhyChoose";
+import Accordion from "../components/Accordion";
+import OurTeam from "../components/OurTeam";
 
 export default function AboutUs() {
   const accordionData = [
@@ -35,6 +37,7 @@ export default function AboutUs() {
         </div>
       </div>
       <WhyChoose />
+      <OurTeam />
     </Wrapper>
   );
 }

@@ -13,7 +13,19 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggling = () => setIsOpen(!isOpen);
-  // const [selectedOption, setSelectedOption] = useState(null);
+
+  const navLinks = [
+    { href: "/", title: "Home" },
+    { href: "/AboutUs", title: "About Us" },
+    { href: "/Collection", title: "Collection" },
+    { href: "/Blog", title: "Blog" },
+    { href: "/Contact", title: "Contact us" },
+  ];
+  const navRightLinks = [
+    { href: "/Liked", title: Liked },
+    { href: "/Cart", title: Cart },
+    { href: "/Profile", title: Avtar },
+  ];
 
   return (
     <Wrapper>
@@ -34,50 +46,24 @@ export default function Navbar() {
                 <MdClose />
               </div>
               <ul className={!showNav ? "navbar-nav nav-menu-ggp hide-nav " : "navbar-nav nav-menu-ggp"}>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/" role="button" exact="true">
-                    Home
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/AboutUs" role="button" exact="true">
-                    About Us
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/Collection" role="button" exact="true">
-                    Collection
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/Blog" role="button" exact="true">
-                    Blog
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/Contact" role="button" exact="true">
-                    Contact Us
-                  </NavLink>
-                </li>
+                {navLinks.map((link, i) => (
+                  <li className="nav-item" key={i}>
+                    <NavLink className="nav-link" to={link.href} role="button" exact="true" onClick={() => setShowNav(false)}>
+                      {link.title}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="header-right-ggp">
               <ul>
-                <li>
-                  <NavLink className="nav-link" to="/Liked" role="button" exact="true">
-                    <img src={Liked} alt="header-icon" />
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="nav-link" to="/Cart" role="button" exact="true">
-                    <img src={Cart} alt="header-icon" />
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="nav-link" to="/Profile" role="button" exact="true">
-                    <img src={Avtar} alt="header-icon" />
-                  </NavLink>
-                </li>
+                {navRightLinks.map((link, i) => (
+                  <li key={i}>
+                    <NavLink className="nav-link" to={link.href} role="button" exact="true" onClick={() => setShowNav(false)}>
+                      <img src={link.title} alt="header-icon" />
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
             </div>
           </nav>
@@ -94,6 +80,7 @@ const Wrapper = styled.div`
     .navbar {
       height: 100px;
       padding-block: 0px;
+      position: static;
       .header-left-ggp {
         .nav-brand-ggp {
           max-width: 238px;

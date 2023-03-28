@@ -31,7 +31,7 @@ export default function LatestNew() {
                     <h2>{newsItem.desc}</h2>
                   </div>
                   <div className="read-more-btn-hp">
-                    <NavLink className="read-more-btn" to="/" role="button" exact="true">
+                    <NavLink className="read-more-btn" to="/Blog" role="button" exact="true">
                       read more
                     </NavLink>
                   </div>

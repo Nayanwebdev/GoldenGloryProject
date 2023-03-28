@@ -12,6 +12,7 @@ import img9 from "../assets/images/Pearls_Earring_6.png";
 import img10 from "../assets/images/Pearls_Earring_7.png";
 import ProductCard from "../components/ProductCard";
 import PageBanner from "../components/PageBanner";
+import NewProduct from "../components/NewProduct";
 
 export default function Collection() {
   const products = [
@@ -33,11 +34,16 @@ export default function Collection() {
         <PageBanner pageTitle="collection" pageLink="collection" />
         <div className="container">
           <div className="collection-block-in-clp">
-            <div className="filter-block-clp"></div>
-            <div className="collections-clp">
-              {products.map((product, index) => (
-                <ProductCard key={index} imgSrc={product.imgSrc} title={product.title} price={product.price}  />
-              ))}
+            <div className="left-block-clp">
+              <div className="filter-block-clp"></div>
+            </div>
+            <div className="right-block-clp">
+              <NewProduct />
+              <div className="collections-clp">
+                {products.map((product, index) => (
+                  <ProductCard key={index} imgSrc={product.imgSrc} title={product.title} price={product.price} />
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -50,17 +56,21 @@ const Wrapper = styled.div`
   .collection-block-main-clp {
     .collection-block-in-clp {
       display: flex;
-      .filter-block-clp {
+      .left-block-clp {
         width: 23%;
-        background-color: antiquewhite;
-        padding: 30px;
+        .filter-block-clp {
+          background-color: antiquewhite;
+          padding: 30px;
+        }
       }
-      .collections-clp {
+      .right-block-clp {
         width: 77%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
         padding: 0px 0px 0px 30px;
+        .collections-clp {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 15px;
+        }
       }
     }
   }
@@ -68,13 +78,17 @@ const Wrapper = styled.div`
   @media (min-width: 0px) and (max-width: 575px) {
     .collection-block-main-clp {
       .collection-block-in-clp {
-        .filter-block-clp {
-          width: 22%;
+        .left-block-clp {
+          .filter-block-clp {
+            width: 22%;
+          }
         }
-        .collections-clp {
+        .right-block-clp {
           width: 78%;
-          grid-template-columns: repeat(1, 1fr);
           padding: 0px 0px 0px 15px;
+          .collections-clp {
+            grid-template-columns: repeat(1, 1fr);
+          }
         }
       }
     }
@@ -82,13 +96,17 @@ const Wrapper = styled.div`
   @media (min-width: 576px) and (max-width: 767px) {
     .collection-block-main-clp {
       .collection-block-in-clp {
-        .filter-block-clp {
-          width: 24%;
+        .left-block-clp {
+          .filter-block-clp {
+            width: 24%;
+          }
         }
-        .collections-clp {
+        .right-block-clp {
           width: 76%;
-          grid-template-columns: repeat(1, 1fr);
           padding: 0px 0px 0px 15px;
+          .collections-clp {
+            grid-template-columns: repeat(1, 1fr);
+          }
         }
       }
     }
@@ -96,13 +114,17 @@ const Wrapper = styled.div`
   @media (min-width: 768px) and (max-width: 991px) {
     .collection-block-main-clp {
       .collection-block-in-clp {
-        .filter-block-clp {
-          width: 22%;
+        .left-block-clp {
+          .filter-block-clp {
+            width: 22%;
+          }
         }
-        .collections-clp {
+        .right-block-clp {
           width: 78%;
-          grid-template-columns: repeat(2, 1fr);
           padding: 0px 0px 0px 20px;
+          .collections-clp {
+            grid-template-columns: repeat(2, 1fr);
+          }
         }
       }
     }

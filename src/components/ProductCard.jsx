@@ -94,6 +94,7 @@ const Wrapper = styled.div`
     }
   }
   .card-content-cb {
+  text-align: center;  
     padding: 20px 0px;
     h3 {
       font-size: 20px;

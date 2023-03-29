@@ -11,27 +11,14 @@ import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
-import ErrorPage from "./components/ErrorPage.jsx";
-
-import { useState, useEffect } from "react";
-import { useParams } from "react-router";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
-  const { id } = useParams();
-  const [show, setShow] = useState(true);
-  useEffect(() => {
-    setShow(true);
-  }, [id]);
-  const Error = (props) => {
-    useEffect(() => props.handleShow(false), []);
-    return <ErrorPage />;
-  };
-
   return (
     <>
       <GlobalStyle />
+      <Navbar />
       <ScrollToTop />
-      {show && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
@@ -41,9 +28,9 @@ function App() {
         <Route path="/liked" element={<Liked />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/*" element={<Error handleShow={(res) => setShow(false)} />} />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
-      {show && <Footer />}
+      <Footer />
     </>
   );
 }

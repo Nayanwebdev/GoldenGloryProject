@@ -20,13 +20,13 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/Blog" element={<Blog />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/Collection" element={<Collection />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/collection" element={<Collection />} />
         <Route path="/liked" element={<Liked />} />
-        <Route path="/Cart" element={<Cart />} />
-        <Route path="/Profile" element={<Profile />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />
     </>

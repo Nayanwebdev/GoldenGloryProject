@@ -1,6 +1,6 @@
 import GlobalStyle from "./GlobalStyles";
 import Navbar from "./components/Navbar";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route,Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Blog from "./pages/Blog";
@@ -20,15 +20,16 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/collection" element={<Collection />} />
-        <Route path="/liked" element={<Liked />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about-us" element={<AboutUs />} />
+        <Route exact path="/blog" element={<Blog />} />
+        <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/collection" element={<Collection />} />
+        <Route exact path="/liked" element={<Liked />} />
+        <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/profile" element={<Profile />} />
+        <Route path="/404" element={<ErrorPage />} />
+        <Route path="*" element={<Navigate to="/404" />} />
       </Routes>
       <Footer />
     </>

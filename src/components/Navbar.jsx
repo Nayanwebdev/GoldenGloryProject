@@ -33,10 +33,12 @@ export default function Navbar() {
         <div className="container">
           <nav className="navbar">
             <div className="header-left-ggp">
-              <div className="nav-brand-ggp">
-                <img src={Logo} alt="logo" />
-                <h2>golden glory</h2>
-              </div>
+              <NavLink to="/" role="button" exact="true">
+                <div className="nav-brand-ggp">
+                  <img src={Logo} alt="logo" />
+                  <h2>golden glory</h2>
+                </div>
+              </NavLink>
             </div>
             <div className={!showNav ? "mobile-menu-icon" : "mobile-menu-icon hide-menu-icon"} onClick={() => setShowNav(!showNav)} role="button">
               <MdMenu />

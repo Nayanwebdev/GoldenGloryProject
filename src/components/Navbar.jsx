@@ -16,15 +16,15 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", title: "Home" },
-    { href: "/AboutUs", title: "About Us" },
-    { href: "/Collection", title: "Collection" },
-    { href: "/Blog", title: "Blog" },
-    { href: "/Contact", title: "Contact us" },
+    { href: "/about-us", title: "About Us" },
+    { href: "/collection", title: "Collection" },
+    { href: "/blog", title: "Blog" },
+    { href: "/contact", title: "Contact us" },
   ];
   const navRightLinks = [
-    { href: "/Liked", title: Liked },
-    { href: "/Cart", title: Cart },
-    { href: "/Profile", title: Avtar },
+    { href: "/liked", title: Liked },
+    { href: "/cart", title: Cart },
+    { href: "/profile", title: Avtar },
   ];
 
   return (

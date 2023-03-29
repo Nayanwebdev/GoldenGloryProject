@@ -42,7 +42,7 @@ export default function FeaturedProduct() {
           ))}
         </div>
         <div className="explore-more-btn">
-          <NavLink className="btn-main-hp dark-btn-hp" to="/Collection" role="button" exact="true">
+          <NavLink className="btn-main-hp dark-btn-hp" to="/collection" role="button" exact="true">
             collection
           </NavLink>
         </div>

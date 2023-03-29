@@ -82,7 +82,7 @@ export default function MostPopular() {
           <div className="mostpopular-block-in-hp">
             <div className="populat-title-hp">
               <TitleMain mainTitle="Shophisticated Beauty On Sale" subTitle="most popular" />
-              <NavLink className="btn-main-hp dark-btn-hp" to="/Collection" role="button" exact="true">
+              <NavLink className="btn-main-hp dark-btn-hp" to="/collection" role="button" exact="true">
                 explore more
               </NavLink>
             </div>

@@ -37,7 +37,7 @@ export default function NewsLetter() {
                 <h3>earrings</h3>
                 <h2>leaf daimonds</h2>
                 <h4 className="price-hp">-$599.00</h4>
-                <NavLink className="btn-main-hp dark-btn-hp" to="/Collection" role="button" exact="true">
+                <NavLink className="btn-main-hp dark-btn-hp" to="/collection" role="button" exact="true">
                   buy now
                 </NavLink>
               </div>

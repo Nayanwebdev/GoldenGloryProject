@@ -318,12 +318,12 @@ const Wrapper = styled.div`
       ul {
         li {
           label {
-            font-size: 12px;
-            line-height: 16px;
-            padding-left: 20px;
+            font-size: 8px;
+            line-height: 14px;
+            padding-left: 15px;
             .checkmark {
-              height: 14px;
-              width: 14px;
+              height: 12px;
+              width: 12px;
               border-radius: 2px;
               &::after {
                 left: 4px;

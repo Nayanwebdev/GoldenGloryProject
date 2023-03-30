@@ -297,8 +297,8 @@ const Wrapper = styled.div`
     }
     .title-fltc {
       h3 {
-        font-size: 12px;
-        line-height: 30px;
+        font-size: 8px;
+        line-height: 28px;
         border-radius: 8px;
         text-align: center;
         padding-left: 0px;

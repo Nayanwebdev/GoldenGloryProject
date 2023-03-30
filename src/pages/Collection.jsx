@@ -13,6 +13,7 @@ import img10 from "../assets/images/Pearls_Earring_7.png";
 import ProductCard from "../components/ProductCard";
 import PageBanner from "../components/PageBanner";
 import NewProduct from "../components/NewProduct";
+import FilterProduct from "../components/FilterProduct";
 
 export default function Collection() {
   const products = [
@@ -35,7 +36,9 @@ export default function Collection() {
         <div className="container">
           <div className="collection-block-in-clp">
             <div className="left-block-clp">
-              <div className="filter-block-clp"></div>
+              <div className="filter-block-clp">
+                <FilterProduct />
+              </div>
             </div>
             <div className="right-block-clp">
               <NewProduct />
@@ -58,14 +61,13 @@ const Wrapper = styled.div`
       display: flex;
       .left-block-clp {
         width: 23%;
+        padding-right: 30px;
         .filter-block-clp {
-          background-color: antiquewhite;
-          padding: 30px;
         }
       }
       .right-block-clp {
         width: 77%;
-        padding: 0px 0px 0px 30px;
+        padding-left: 30px;
         .collections-clp {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -79,8 +81,9 @@ const Wrapper = styled.div`
     .collection-block-main-clp {
       .collection-block-in-clp {
         .left-block-clp {
+          width: 22%;
+          padding-right: 10px;
           .filter-block-clp {
-            width: 22%;
           }
         }
         .right-block-clp {
@@ -97,13 +100,14 @@ const Wrapper = styled.div`
     .collection-block-main-clp {
       .collection-block-in-clp {
         .left-block-clp {
+          width: 24%;
+          padding-right: 15px;
           .filter-block-clp {
-            width: 24%;
           }
         }
         .right-block-clp {
           width: 76%;
-          padding: 0px 0px 0px 15px;
+          padding-left: 15px;
           .collections-clp {
             grid-template-columns: repeat(1, 1fr);
           }
@@ -115,13 +119,14 @@ const Wrapper = styled.div`
     .collection-block-main-clp {
       .collection-block-in-clp {
         .left-block-clp {
+          width: 22%;
+          padding-right:20px;
           .filter-block-clp {
-            width: 22%;
           }
         }
         .right-block-clp {
           width: 78%;
-          padding: 0px 0px 0px 20px;
+          padding-left:20px;
           .collections-clp {
             grid-template-columns: repeat(2, 1fr);
           }

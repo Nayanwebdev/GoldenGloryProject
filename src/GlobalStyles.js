@@ -127,6 +127,12 @@ img {
     color: var(--white-color);
     background-color: var(--text-color);
 }
+.rate{
+    color: #FFC107;
+}
+.blank-rate {
+    color: #eee;
+}
 .read-more-btn{
     font-size: 18px;
     line-height: 26px;

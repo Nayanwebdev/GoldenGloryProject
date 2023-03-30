@@ -305,9 +305,9 @@ const Wrapper = styled.div`
       }
     }
     .btn-main-hp {
-      font-size: 10px;
-      width: 100px;
-      line-height: 40px;
+      font-size: 8px;
+      width: 80px;
+      line-height: 36px;
       margin-bottom: 0px;
     }
     .special-product-fltc {

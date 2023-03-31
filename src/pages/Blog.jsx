@@ -8,6 +8,7 @@ import blogImg3 from "../assets/images/blog_img_3.png";
 import blogImg4 from "../assets/images/blog_img_4.png";
 import blogImg5 from "../assets/images/blog_img_5.png";
 import blogImg6 from "../assets/images/blog_img_6.png";
+import SideBar from "../components/SideBar";
 
 export default function Blog() {
   const Blogs = [
@@ -25,7 +26,9 @@ export default function Blog() {
       <div className="blog-page-block-bp">
         <div className="container">
           <div className="blog-page-in-bp">
-            <div className="left-blck-bp"></div>
+            <div className="left-blck-bp">
+              <SideBar />
+            </div>
             <div className="right-blck-bp">
               <div className="blog-block-bp">
                 {Blogs.map((blog, i) => (
@@ -47,7 +50,6 @@ const Wrapper = styled.div`
       display: flex;
       .left-blck-bp {
         width: 23%;
-        background: antiquewhite;
       }
       .right-blck-bp {
         width: 77%;
@@ -64,8 +66,16 @@ const Wrapper = styled.div`
     .blog-page-block-bp {
       .blog-page-in-bp {
         .left-blck-bp {
-          width: 0%;
-          background: antiquewhite;
+          width: auto;
+          position: absolute;
+          background-color: var(--white-color);
+          z-index: 999;
+          .filter-block-main-fltc {
+            padding-inline: 20px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            box-shadow: rgba(193, 143, 97, 0.15) 5px 5px 5px;
+          }
         }
         .right-blck-bp {
           width: 100%;
@@ -81,8 +91,21 @@ const Wrapper = styled.div`
   @media (min-width: 576px) and (max-width: 767px) {
     .blog-page-block-bp {
       .blog-page-in-bp {
+        .left-blck-bp {
+          width: auto;
+          position: absolute;
+          background-color: var(--white-color);
+          z-index: 999;
+          .filter-block-main-fltc {
+            padding-inline: 20px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            box-shadow: rgba(193, 143, 97, 0.15) 5px 5px 5px;
+          }
+        }
         .right-blck-bp {
-          padding-left: 20px;
+          width: 100%;
+          padding-left: 0px;
           .blog-block-bp {
             grid-template-columns: repeat(1, 1fr);
             gap: 20px;

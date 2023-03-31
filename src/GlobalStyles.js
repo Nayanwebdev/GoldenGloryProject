@@ -144,6 +144,15 @@ img {
 .read-more-btn:hover{
     color: var(--golden-color);
 }
+.sidebar-toggle{
+    border: 0px;
+    height: 30px;
+    background-color: var(--bg-color);
+    width: 30px;
+    svg{
+        fill:var(--text-color);
+    }
+}
 
 @media (min-width: 0px) and (max-width: 575px) {
     .container {
@@ -209,5 +218,4 @@ img {
   @media (min-width: 1200px) and (max-width: 1440px) {
   } */
 `;
-
 export default GlobalStyle;

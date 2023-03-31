@@ -76,7 +76,7 @@ const Wrapper = styled.div`
   @media (min-width: 0px) and (max-width: 575px) {
     margin-bottom: 20px;
     .new-arrival-block-nac {
-      padding: 10px;
+      padding: 8px 10px;
       .new-arrival-in-nac {
         .content-nac {
           max-width: 150px;
@@ -103,24 +103,23 @@ const Wrapper = styled.div`
   @media (min-width: 576px) and (max-width: 767px) {
     margin-bottom: 20px;
     .new-arrival-block-nac {
-      padding: 10px;
+      padding: 28px 20px;
       .new-arrival-in-nac {
         .content-nac {
-          max-width: 150px;
+          max-width: 170px;
           h4 {
-            font-size: 16px;
-            line-height: 18px;
-            padding-bottom: 6px;
+            font-size: 18px;
+            line-height: 20px;
           }
           h2 {
-            font-size: 16px;
-            line-height: 18px;
+            font-size: 22px;
+            line-height: 24px;
             font-weight: 600;
             padding-bottom: 5px;
           }
           h3 {
-            font-size: 16px;
-            line-height: 18px;
+            font-size: 18px;
+            line-height: 20px;
           }
         }
       }

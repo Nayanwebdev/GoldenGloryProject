@@ -13,7 +13,7 @@ import img10 from "../assets/images/Pearls_Earring_7.png";
 import ProductCard from "../components/ProductCard";
 import PageBanner from "../components/PageBanner";
 import NewProduct from "../components/NewProduct";
-import FilterProduct from "../components/FilterProduct";
+import SideBar from "../components/SideBar";
 
 export default function Collection() {
   const products = [
@@ -37,7 +37,7 @@ export default function Collection() {
           <div className="collection-block-in-clp">
             <div className="left-block-clp">
               <div className="filter-block-clp">
-                <FilterProduct />
+                <SideBar />
               </div>
             </div>
             <div className="right-block-clp">
@@ -81,14 +81,21 @@ const Wrapper = styled.div`
     .collection-block-main-clp {
       .collection-block-in-clp {
         .left-block-clp {
-          width: 22%;
-          padding-right: 10px;
-          .filter-block-clp {
+          width: auto;
+          position: absolute;
+          background-color: var(--white-color);
+          z-index: 999;
+          padding-right: 0px;
+          .filter-block-main-fltc {
+            padding-inline: 20px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            box-shadow: 5px 5px 5px rgba(193, 143, 97, 0.15);
           }
         }
         .right-block-clp {
-          width: 78%;
-          padding: 0px 0px 0px 15px;
+          width: 100%;
+          padding-left: 0px;
           .collections-clp {
             grid-template-columns: repeat(1, 1fr);
           }
@@ -100,14 +107,21 @@ const Wrapper = styled.div`
     .collection-block-main-clp {
       .collection-block-in-clp {
         .left-block-clp {
-          width: 24%;
-          padding-right: 15px;
-          .filter-block-clp {
+          width: auto;
+          position: absolute;
+          background-color: var(--white-color);
+          z-index: 999;
+          padding-right: 0px;
+          .filter-block-main-fltc {
+            padding-inline: 20px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            box-shadow: 5px 5px 5px rgba(193, 143, 97, 0.15);
           }
         }
         .right-block-clp {
-          width: 76%;
-          padding-left: 15px;
+          width: 100%;
+          padding-left: 0px;
           .collections-clp {
             grid-template-columns: repeat(1, 1fr);
           }
@@ -120,13 +134,13 @@ const Wrapper = styled.div`
       .collection-block-in-clp {
         .left-block-clp {
           width: 22%;
-          padding-right:20px;
+          padding-right: 20px;
           .filter-block-clp {
           }
         }
         .right-block-clp {
           width: 78%;
-          padding-left:20px;
+          padding-left: 20px;
           .collections-clp {
             grid-template-columns: repeat(2, 1fr);
           }

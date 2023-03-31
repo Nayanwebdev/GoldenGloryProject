@@ -20,7 +20,7 @@ export default function FilterProduct() {
 
   return (
     <Wrapper>
-      <div className="filter-block-main-fltc">
+      <div className="filter-block-main-fltc" >
         <div className="filter-block-in-fltc">
           <div className="categories-fltc">
             <div className="title-fltc">
@@ -257,7 +257,7 @@ const Wrapper = styled.div`
     margin-bottom: 10px;
   }
   @media (min-width: 0px) and (max-width: 575px) {
-    .filter-block-main-fltc {
+    /* .filter-block-main-fltc {
       .filter-block-in-fltc {
         .categories-fltc {
           padding-bottom: 20px;
@@ -294,8 +294,8 @@ const Wrapper = styled.div`
           }
         }
       }
-    }
-    .title-fltc {
+    } */
+    /* .title-fltc {
       h3 {
         font-size: 8px;
         line-height: 28px;
@@ -303,14 +303,14 @@ const Wrapper = styled.div`
         text-align: center;
         padding-left: 0px;
       }
-    }
-    .btn-main-hp {
+    } */
+    /* .btn-main-hp {
       font-size: 8px;
       width: 80px;
       line-height: 36px;
       margin-bottom: 0px;
-    }
-    .special-product-fltc {
+    } */
+    /* .special-product-fltc {
       margin-bottom: 10px;
       h2 {
         padding-bottom: 10px;
@@ -361,11 +361,12 @@ const Wrapper = styled.div`
           }
         }
       }
-    }
+    } */
   }
   @media (min-width: 576px) and (max-width: 767px) {
-    .filter-block-main-fltc {
+    /* .filter-block-main-fltc {
       .filter-block-in-fltc {
+        background-color: var(--white-color);
         .categories-fltc {
           padding-bottom: 20px;
           .category-list-fltc {
@@ -401,8 +402,8 @@ const Wrapper = styled.div`
           }
         }
       }
-    }
-    .title-fltc {
+    } */
+    /* .title-fltc {
       h3 {
         font-size: 12px;
         line-height: 30px;
@@ -410,14 +411,14 @@ const Wrapper = styled.div`
         text-align: center;
         padding-left: 0px;
       }
-    }
-    .btn-main-hp {
+    } */
+    /* .btn-main-hp {
       font-size: 10px;
       width: 100px;
       line-height: 40px;
       margin-bottom: 0px;
-    }
-    .special-product-fltc {
+    } */
+    /* .special-product-fltc {
       margin-bottom: 10px;
       h2 {
         padding-bottom: 10px;
@@ -468,7 +469,7 @@ const Wrapper = styled.div`
           }
         }
       }
-    }
+    } */
   }
   @media (min-width: 768px) and (max-width: 991px) {
     .filter-block-main-fltc {

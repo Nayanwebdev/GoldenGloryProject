@@ -21,15 +21,11 @@ const SideBar = () => {
     };
   }, []);
 
-  const toggleBar = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
       {isMobile ? (
         <>
-          <button className="sidebar-toggle" onClick={toggleBar}>
+          <button className="sidebar-toggle" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
           {isOpen && <FilterProduct />}

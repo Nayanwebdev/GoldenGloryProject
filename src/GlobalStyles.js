@@ -153,7 +153,15 @@ img {
         fill:var(--text-color);
     }
 }
-
+.form-control:focus{
+    box-shadow: none;
+    border-color: var(--text-color);
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 @media (min-width: 0px) and (max-width: 575px) {
     .container {
         width: 100%;

@@ -7,7 +7,7 @@ import spImg2 from "../assets/images/Pearls_Breslate_sp.png";
 import spImg3 from "../assets/images/Peacock_Earrings_sp.png";
 import collectionImg from "../assets/images/collection_img.png";
 
-export default function FilterProduct() {
+const FilterProduct = () => {
   const categories = ["diamonds", "gold", "earrings", "chains", "nacklace"];
   const colors = ["black", "blue", "red"];
   const priseRanges = ["$150 - $350", "$50 - $149"];
@@ -20,7 +20,7 @@ export default function FilterProduct() {
 
   return (
     <Wrapper>
-      <div className="filter-block-main-fltc" >
+      <div className="filter-block-main-fltc">
         <div className="filter-block-in-fltc">
           <div className="categories-fltc">
             <div className="title-fltc">
@@ -82,11 +82,13 @@ export default function FilterProduct() {
                 ))}
               </ul>
             </div>
-            <Button btn_text="Filter Search" class_name="btn-main-hp dark-btn-hp" />
+            <button className="btn-main-hp dark-btn-hp" >
+              Filter Search
+            </button>
           </div>
           <div className="categories-fltc">
             <div className="title-fltc">
-              <h3>Special</h3>
+              <h3>Special 12</h3>
             </div>
             <div className="category-list-fltc">
               <div className="special-product-fltc">
@@ -109,7 +111,9 @@ export default function FilterProduct() {
       </div>
     </Wrapper>
   );
-}
+};
+
+export default FilterProduct;
 
 const Wrapper = styled.div`
   .filter-block-main-fltc {

@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import SingleProduct from "./SingleProduct";
 
 export default function Cart() {
   return (
-    <div>Cart page</div>
-  )
+    <div>
+      <SingleProduct />
+    </div>
+  );
 }

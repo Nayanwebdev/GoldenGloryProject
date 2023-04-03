@@ -5,8 +5,6 @@ import TitleMain from "./TitleMain";
 import ProductCard from "./ProductCard";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import background from "../assets/images/mostpopular_bg.png";
 import img from "../assets/images/Peacock_Earrings.png";
 import img1 from "../assets/images/Pearls_Breslate_1.png";

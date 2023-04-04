@@ -7,6 +7,65 @@ import banneImg from "../assets/images/b1.png";
 import productImg from "../assets/images/earring_img.png";
 import { NavLink } from "react-router-dom";
 
+export default function HeroBanner() {
+  return (
+    <Wrapper>
+      <div className="banner-block-hp">
+        <div className="container">
+          <div className="row">
+            <div className="left-banner-hp">
+              <h4>New Collection</h4>
+              <h1>Parisian GlamBridge</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing Bibendum est ultricies integer.</p>
+              <div className="btn-group-hp">
+                <NavLink className="btn-main-hp dark-btn-hp" to="/" role="button" exact="true">
+                  buy more
+                </NavLink>
+                <NavLink className="btn-main-hp light-btn-hp" to="/" role="button" exact="true">
+                  read more
+                </NavLink>
+              </div>
+              <div className="customer-support-hp">
+                <div className="customer-support-box-hp delivery-hp">
+                  <img src={deliveryImg} alt="del-img" />
+                  <span>Free Delivery</span>
+                </div>
+                <div className="customer-support-box-hp return-hp">
+                  <img src={returnImg} alt="del-img" />
+                  <span>easy to return</span>
+                </div>
+                <div className="customer-support-box-hp support-hp">
+                  <img src={supportImg} alt="del-img" />
+                  <span>24H suppport</span>
+                </div>
+              </div>
+            </div>
+            <div className="right-banner-hp">
+              <div className="right-banner-img-hp">
+                <img src={banneImg} alt="btn-img" />
+              </div>
+              <div className="right-banner-img-bg-hp"></div>
+              <div className="right-banner-product-hp">
+                <h3>earrings</h3>
+                <h2>leaf daimonds</h2>
+                <h4 className="price-hp">-$599.00</h4>
+              </div>
+              <div className="product-add-hp">
+                <div className="product-add-btn-hp">
+                  <a href="#">+</a>
+                </div>
+                <div className="product-img-hp">
+                  <img src={productImg} alt="earring" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Wrapper>
+  );
+}
+
 const Wrapper = styled.div`
   .banner-block-hp {
     background: var(--bg-color);
@@ -625,62 +684,3 @@ const Wrapper = styled.div`
     }
   }
 `;
-
-export default function HeroBanner() {
-  return (
-    <Wrapper>
-      <div className="banner-block-hp">
-        <div className="container">
-          <div className="row">
-            <div className="left-banner-hp">
-              <h4>New Collection</h4>
-              <h1>Parisian GlamBridge</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl suscipit adipiscing Bibendum est ultricies integer.</p>
-              <div className="btn-group-hp">
-                <NavLink className="btn-main-hp dark-btn-hp" to="/" role="button" exact="true">
-                  buy more
-                </NavLink>
-                <NavLink className="btn-main-hp light-btn-hp" to="/" role="button" exact="true">
-                  read more
-                </NavLink>
-              </div>
-              <div className="customer-support-hp">
-                <div className="customer-support-box-hp delivery-hp">
-                  <img src={deliveryImg} alt="del-img" />
-                  <span>Free Delivery</span>
-                </div>
-                <div className="customer-support-box-hp return-hp">
-                  <img src={returnImg} alt="del-img" />
-                  <span>easy to return</span>
-                </div>
-                <div className="customer-support-box-hp support-hp">
-                  <img src={supportImg} alt="del-img" />
-                  <span>24H suppport</span>
-                </div>
-              </div>
-            </div>
-            <div className="right-banner-hp">
-              <div className="right-banner-img-hp">
-                <img src={banneImg} alt="btn-img" />
-              </div>
-              <div className="right-banner-img-bg-hp"></div>
-              <div className="right-banner-product-hp">
-                <h3>earrings</h3>
-                <h2>leaf daimonds</h2>
-                <h4 className="price-hp">-$599.00</h4>
-              </div>
-              <div className="product-add-hp">
-                <div className="product-add-btn-hp">
-                  <a href="#">+</a>
-                </div>
-                <div className="product-img-hp">
-                  <img src={productImg} alt="earring" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Wrapper>
-  );
-}

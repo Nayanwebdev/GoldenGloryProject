@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
 import PageBanner from "../components/PageBanner";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import pImg from "../assets/images/Pearls_Earring_7.png";
-import pImg2 from "../assets/images/Pearls_Earring_7.png";
-import pImg3 from "../assets/images/Pearls_Earring_7.png";
-import pImg4 from "../assets/images/Pearls_Earring_7.png";
+import TitleMain from "../components/TitleMain";
 import RatingBlock from "../components/Rating";
 import MyNavTab from "../components/MyNavTab";
 import ProductCard from "../components/ProductCard";
+import { Carousel } from "react-responsive-carousel";
+import pImg from "../assets/images/peackock_product_img.png";
+import pImg2 from "../assets/images/peackock_product_img.png";
+import pImg3 from "../assets/images/peackock_product_img.png";
+import pImg4 from "../assets/images/peackock_product_img.png";
 import img from "../assets/images/Peacock_Earrings.png";
 import img1 from "../assets/images/Pearls_Breslate_1.png";
 import img2 from "../assets/images/Pearls_Breslate_2.png";
@@ -18,7 +18,6 @@ import img3 from "../assets/images/Pearls_Earring_1.png";
 import img4 from "../assets/images/Pearls_Earring_2.png";
 import img5 from "../assets/images/Pearls_Earring_3.png";
 import img6 from "../assets/images/Pearls_Earring_4.png";
-import TitleMain from "../components/TitleMain";
 
 export default function SingleProduct() {
   const [num, setNum] = useState(0);
@@ -105,7 +104,7 @@ export default function SingleProduct() {
       <div className="single-product-block-spp">
         <PageBanner pageTitle="Peacock Earrings" pageLink="singleProduct" />
         <div className="container">
-          <div className="single-product-block-spp">
+          <div className="single-product-in-spp">
             <div className="left-img-block-spp">
               <Carousel showArrows={false} showIndicators={false} showStatus={false}>
                 {productImgs.map((imgSrc, i) => (
@@ -228,19 +227,21 @@ export default function SingleProduct() {
 
 const Wrapper = styled.div`
   .single-product-block-spp {
-    .single-product-block-spp {
+    .single-product-in-spp {
       display: flex;
-      gap: 30px;
+      gap: 70px;
 
       .left-img-block-spp {
-        width: 40%;
+        width: 45%;
         .carousel {
           .slider-wrapper {
             .slider {
               .slide {
                 padding: 15px;
                 .slider-img-spp {
+                  height: 645px;
                   img {
+                    height: 100%;
                   }
                 }
               }
@@ -253,19 +254,28 @@ const Wrapper = styled.div`
             }
           }
           .thumbs-wrapper {
+            margin: 10px;
             .thumbs {
               text-align: center;
               .thumb {
-                margin-inline: 10px;
+                margin: 10px;
                 box-shadow: 0 0 15px rgb(193, 143, 97, 0.15);
+                width: 80px;
+                height: 90px;
+                img {
+                  height: 80px;
+                  object-fit: cover;
+                }
                 &:hover {
                   border: none;
                 }
                 &:focus {
                   border: none;
+                  box-shadow: 0 0 15px rgb(193, 143, 97, 0.5);
                 }
               }
               .selected {
+                box-shadow: 0 0 15px rgb(193, 143, 97, 0.5);
                 border: none;
               }
             }
@@ -273,7 +283,7 @@ const Wrapper = styled.div`
         }
       }
       .right-info-block-spp {
-        width: 40%;
+        width: 55%;
         padding-top: 15px;
         .product-info-in-spp {
           .title {
@@ -281,7 +291,7 @@ const Wrapper = styled.div`
             h3 {
               font-size: 30px;
               line-height: 46px;
-              font-weight: 600;
+              font-weight: 500;
               text-transform: capitalize;
               color: var(--text-color);
             }
@@ -375,13 +385,14 @@ const Wrapper = styled.div`
             }
           }
           .total-price {
+            display: flex;
+            align-items: center;
+            gap: 8px;
             span {
               font-size: 25px;
-              line-height: 34px;
               font-weight: 600;
               color: var(--text-color);
               display: inline-block;
-              padding-top: 10px;
             }
           }
           .add-to-cart {
@@ -500,10 +511,41 @@ const Wrapper = styled.div`
 
   @media (min-width: 0px) and (max-width: 575px) {
     .single-product-block-spp {
-      .single-product-block-spp {
+      .related-product-block-spp {
+        padding-bottom: 20px;
+      }
+      .single-product-in-spp {
         flex-wrap: wrap;
+        gap: 10px;
         .left-img-block-spp {
           width: 100%;
+          .carousel {
+            .slider-wrapper {
+              .slider {
+                .slide {
+                  .slider-img-spp {
+                    height: 300px;
+                    img {
+                      object-fit: cover;
+                    }
+                  }
+                }
+              }
+            }
+            .thumbs-wrapper {
+              margin-block: 0px;
+              .thumbs {
+                .thumb {
+                  width: 60px !important;
+                  margin-inline: 5px;
+                  height: 70px;
+                  img {
+                    height: 60px;
+                  }
+                }
+              }
+            }
+          }
         }
         .right-info-block-spp {
           width: 100%;
@@ -557,7 +599,6 @@ const Wrapper = styled.div`
             .total-price {
               span {
                 font-size: 22px;
-                line-height: 26px;
               }
             }
             .add-to-cart {
@@ -616,10 +657,44 @@ const Wrapper = styled.div`
   }
   @media (min-width: 576px) and (max-width: 767px) {
     .single-product-block-spp {
-      .single-product-block-spp {
+      .related-product-block-spp {
+        padding-bottom: 20px;
+      }
+      .single-product-in-spp {
         flex-wrap: wrap;
+        gap: 10px;
         .left-img-block-spp {
           width: 100%;
+          .carousel {
+            .slider-wrapper {
+              .slider {
+                .slide {
+                  .slider-img-spp {
+                    height: 300px;
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 10px;
+                    img {
+                      object-fit: contain;
+                    }
+                  }
+                }
+              }
+            }
+            .thumbs-wrapper {
+              margin-block: 0px;
+              .thumbs {
+                .thumb {
+                  width: 60px !important;
+                  margin-inline: 5px;
+                  height: 70px;
+                  img {
+                    height: 60px;
+                  }
+                }
+              }
+            }
+          }
         }
         .right-info-block-spp {
           width: 100%;
@@ -673,7 +748,6 @@ const Wrapper = styled.div`
             .total-price {
               span {
                 font-size: 22px;
-                line-height: 26px;
               }
             }
             .add-to-cart {
@@ -721,6 +795,9 @@ const Wrapper = styled.div`
           }
         }
       }
+      .product-desc-block-spp {
+        padding-block: 40px;
+      }
     }
     .mini-title {
       font-size: 15px;
@@ -728,9 +805,122 @@ const Wrapper = styled.div`
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {
+    .single-product-block-spp {
+      .related-product-block-spp {
+        padding-bottom: 20px;
+      }
+      .single-product-in-spp {
+        flex-wrap: wrap;
+        gap: 10px;
+        .left-img-block-spp {
+          width: 100%;
+          .carousel {
+            .slider-wrapper {
+              .slider {
+                .slide {
+                  .slider-img-spp {
+                    height: 360px;
+                    width: 70%;
+                    margin: 0 auto;
+                    padding: 10px;
+                    img {
+                      object-fit: contain;
+                    }
+                  }
+                }
+              }
+            }
+            .thumbs-wrapper {
+              .thumbs {
+                .thumb {
+                  margin-inline: 5px;
+                  height: 75px;
+                  width: 65px !important;
+                  img {
+                    height: 65px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .right-info-block-spp {
+          width: 100%;
+          .product-info-in-spp {
+          }
+        }
+      }
+      .product-desc-block-spp {
+        padding-block: 70px;
+      }
+    }
   }
   @media (min-width: 992px) and (max-width: 1199px) {
+    .single-product-block-spp {
+      .single-product-in-spp {
+        gap: 30px;
+        .left-img-block-spp {
+          .carousel {
+            .slider-wrapper {
+              .slider {
+                .slide {
+                  .slider-img-spp {
+                    height: 540px;
+                    img {
+                      object-fit: contain;
+                    }
+                  }
+                }
+              }
+            }
+            .thumbs-wrapper {
+              .thumbs {
+                .thumb {
+                  margin-inline: 5px;
+                }
+              }
+            }
+          }
+        }
+        .right-info-block-spp {
+          .product-info-in-spp {
+            .discription {
+              padding-bottom: 10px;
+              p {
+                font-size: 16px;
+                line-height: 24px;
+              }
+            }
+            .color {
+              padding-bottom: 10px;
+            }
+            .material {
+              ul {
+                gap: 10px;
+              }
+            }
+            .categories {
+              padding-top: 30px;
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1200px) and (max-width: 1440px) {
+    .single-product-block-spp {
+      .single-product-in-spp {
+        gap: 30px;
+        .carousel .thumbs-wrapper .thumbs .thumb {
+          margin-inline: 6px !important;
+        }
+      }
+      .product-desc-block-spp {
+        padding-block: 50px 70px;
+      }
+      .related-product-block-spp {
+        padding-bottom: 40px;
+      }
+    }
   }
 `;

@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
+import SingleProduct from "./SingleProduct";
 
 export default function Liked() {
-  return (
-    <div>liked profuct page</div>
-  )
+  return <SingleProduct />;
 }

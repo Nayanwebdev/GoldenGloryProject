@@ -86,6 +86,7 @@ const Wrapper = styled.div`
   @media (min-width: 0px) and (max-width: 575px) {
     .page-banner-allp {
       height: 200px;
+      margin-bottom:30px;
       .page-banner-title-allp {
         h2 {
           font-size: 24px;
@@ -107,6 +108,7 @@ const Wrapper = styled.div`
   @media (min-width: 576px) and (max-width: 767px) {
     .page-banner-allp {
       height: 220px;
+      margin-bottom:30px;
       .page-banner-title-allp {
         h2 {
           font-size: 24px;

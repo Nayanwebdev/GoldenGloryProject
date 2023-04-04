@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "./Button";
 import TitleMain from "./TitleMain";
 import ProductCard from "./ProductCard";
 import { NavLink } from "react-router-dom";
@@ -70,9 +69,7 @@ export default function MostPopular() {
       },
     ],
   };
-  const showmore = () => {
-    alert("Show");
-  };
+  
   return (
     <Wrapper>
       <div className="mostpopular-block-main-hp" style={{}}>

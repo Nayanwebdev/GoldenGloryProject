@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Slider from "react-slick";
+
 import styled from "styled-components";
 
 export default function MyNavTab() {
@@ -28,7 +30,27 @@ export default function MyNavTab() {
       },
     },
   ];
-  //   console.log(ProductDescs);
+
+  var settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <Wrapper>
       <ul className="nav nav-tabs">
@@ -89,14 +111,16 @@ export default function MyNavTab() {
 
         <div className={`tab-pane ${activeTab === "tab3" ? "active" : ""}`}>
           <div className="reviews">
-            <div className="review-card">
-              <p>{ProductDescs[0].reviews.person1.review}</p>
-              <h2>{ProductDescs[0].reviews.person1.name}</h2>
-            </div>
-            <div className="review-card">
-              <p>{ProductDescs[0].reviews.person2.review}</p>
-              <h2>{ProductDescs[0].reviews.person2.name}</h2>
-            </div>
+            <Slider {...settings}>
+              <div className="review-card">
+                <p>{ProductDescs[0].reviews.person1.review}</p>
+                <h2>{ProductDescs[0].reviews.person1.name}</h2>
+              </div>
+              <div className="review-card">
+                <p>{ProductDescs[0].reviews.person2.review}</p>
+                <h2>{ProductDescs[0].reviews.person2.name}</h2>
+              </div>
+            </Slider>
           </div>
         </div>
       </div>
@@ -163,9 +187,6 @@ const Wrapper = styled.div`
       }
     }
     .reviews {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
       .review-card {
         text-align: center;
         background: aliceblue;
@@ -176,6 +197,9 @@ const Wrapper = styled.div`
         h2 {
           text-transform: capitalize;
         }
+      }
+      .slick-slide {
+        padding-right: 20px;
       }
     }
   }
@@ -193,6 +217,7 @@ const Wrapper = styled.div`
     .tab-content {
       .description {
         padding: 20px;
+        text-align:center;
       }
       .specification {
         table {
@@ -213,7 +238,12 @@ const Wrapper = styled.div`
         }
       }
       .reviews {
-        grid-template-columns: repeat(1, 1fr);
+        .slick-slide {
+          padding-right: 0px;
+        }
+        .review-card {
+          padding: 30px 20px;
+        }
       }
     }
   }
@@ -231,6 +261,7 @@ const Wrapper = styled.div`
     .tab-content {
       .description {
         padding: 20px;
+        text-align:center;
       }
       .specification {
         table {
@@ -251,7 +282,6 @@ const Wrapper = styled.div`
         }
       }
       .reviews {
-        grid-template-columns: repeat(1, 1fr);
       }
     }
   }

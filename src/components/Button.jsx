@@ -56,10 +56,6 @@ const Wrapper = styled.button`
   }
 `;
 
-export default function Button({ btn_text, class_name, showmore }) {
-  return (
-    <Wrapper className={`${class_name}`} onClick={() => showmore()}>
-      {btn_text}
-    </Wrapper>
-  );
+export default function Button({ btn_text, class_name }) {
+  return <Wrapper className={`${class_name}`}>{btn_text}</Wrapper>;
 }

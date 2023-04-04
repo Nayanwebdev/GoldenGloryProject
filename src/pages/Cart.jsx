@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import productImg from "../assets/images/Pearls_Earring_7.png";
+import swal from "sweetalert";
 
 export default function Cart() {
+  const contact = () => {
+    swal(" website is still under construction");
+  };
   return (
     <Wrapper>
       <div className="cart-block-main-cp">
@@ -72,7 +76,9 @@ export default function Cart() {
                   </h3>
                   <span className="total-amt">$499</span>
                 </div>
-                <button className="buy-btn">proceed to buy</button>
+                <button className="buy-btn" onClick={contact}>
+                  proceed to buy
+                </button>
               </div>
             </div>
           </div>
@@ -282,7 +288,7 @@ const Wrapper = styled.div`
               }
               .product-data-cp {
                 .title {
-                  padding-bottom:5px;
+                  padding-bottom: 5px;
                   h3 {
                     font-size: 18px;
                     line-height: 22px;

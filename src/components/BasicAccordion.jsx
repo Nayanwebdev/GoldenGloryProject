@@ -2,7 +2,7 @@ import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import styled from "styled-components";
 
-export default function BasicAccordion({ AccordionTitle, AccordionContent }) {
+export default function BasicAccordion() {
   const accordionData = [
     { id: 1, title: "Who is golden glory?", content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente laborum cupiditate possimus labore, hic temporibus velit dicta earum suscipit commodi eum enim atque at? Et perspiciatis dolore iure voluptatem." },
     { id: 2, title: "What do we do?", content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente laborum cupiditate possimus labore, hic temporibus velit dicta earum suscipit commodi eum enim atque at? Et perspiciatis dolore iure voluptatem." },

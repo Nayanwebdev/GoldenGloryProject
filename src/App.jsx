@@ -28,6 +28,7 @@ function App() {
         <Route exact path="/liked" element={<Liked />} />
         <Route exact path="/cart" element={<Cart />} />
         <Route exact path="/profile" element={<Profile />} />
+        <Route exact path="/profile/:tab" element={<Profile />} />
         <Route path="/404" element={<ErrorPage />} />
         <Route path="*" element={<Navigate to="/404" />} />
       </Routes>

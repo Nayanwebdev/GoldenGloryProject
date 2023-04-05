@@ -27,11 +27,8 @@ export default function FeaturedProduct() {
     { imgSrc: img9, title: "Pearls Earrings", price: "$ 123" },
     { imgSrc: img10, title: "Pearls Earrings", price: "$ 123" },
   ];
-
   const imagePerRow = products.length;
-
   const numberOfProductShown = 8;
-
   return (
     <Wrapper>
       <div className="container">

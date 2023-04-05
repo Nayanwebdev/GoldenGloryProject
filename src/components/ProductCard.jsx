@@ -25,9 +25,7 @@ export default function ProductCard({ imgSrc, title, discPrice, price }) {
       </div>
       <div className="card-content-cb">
         <h3 className="card-title"> {title} </h3>
-
         <h4 className="card-price">
-          {" "}
           {price}
           <span className="card-disc-price"> {discPrice} </span>
         </h4>

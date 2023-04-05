@@ -11,11 +11,8 @@ const SideBar = () => {
       setIsMobile(window.innerWidth <= 767);
       setIsOpen(false);
     };
-
     handleResize();
-
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };

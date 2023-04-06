@@ -43,4 +43,48 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (min-width: 0px) and (max-width: 575px) {
+    .faq-block-main {
+      .faq-title {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 10px;
+      }
+      .faq-data {
+        h4 {
+          font-size: 12px;
+          line-height: 15px;
+          margin-top: 15px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 15px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .faq-block-main {
+      .faq-data {
+        h4 {
+          font-size: 14px;
+          line-height: 18px;
+          margin-top: 20px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 18px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+  }
+  @media (min-width: 1200px) and (max-width: 1440px) {
+  }
 `;

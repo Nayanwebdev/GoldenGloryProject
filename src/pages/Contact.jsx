@@ -28,7 +28,7 @@ export default function Contact() {
                 </div>
                 <div className="left-content-cp">
                   <h2>address</h2>
-                  <p>132, My Street, Kingston, New York 12401, United States.</p>
+                  <p>410, Nilkanth Plaza, KiranChowk, New York 12401, United States.</p>
                   <ul className="social-media-cp">
                     {socials.map((icon, index) => (
                       <li key={index}>

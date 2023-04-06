@@ -55,7 +55,6 @@ const ProfileInfoBlock = () => {
         <div className="faq">
           <FaqBlock />
         </div>
-        
       </div>
     </Wrapper>
   );
@@ -76,6 +75,8 @@ const Wrapper = styled.div`
     margin-bottom: 30px;
     input {
       height: 50px;
+      width: 100%;
+      max-width: 300px;
       font-size: 16px;
       background: #fafafa;
       padding-inline: 16px;
@@ -97,5 +98,95 @@ const Wrapper = styled.div`
         height: 16px;
       }
     }
+  }
+
+  @media (min-width: 0px) and (max-width: 575px) {
+    h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .form-row {
+      display: block;
+      width: 100%;
+      margin-bottom: 14px;
+      input {
+        height: 36px;
+        width: 100%;
+        font-size: 12px;
+        padding-inline: 8px 8px;
+        margin-bottom: 10px;
+      }
+      .form-radio {
+        label {
+          font-size: 14px;
+        }
+        input {
+          width: 14px;
+          height: 14px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .form-row {
+      display: block;
+      width: 100%;
+      margin-bottom: 14px;
+      input {
+        height: 36px;
+        width: 100%;
+        font-size: 12px;
+        padding-inline: 8px 8px;
+        margin-bottom: 10px;
+      }
+      .form-radio {
+        label {
+          font-size: 14px;
+        }
+        input {
+          width: 14px;
+          height: 14px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    h3 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .form-row {
+      gap: 10px;
+      margin-bottom: 20px;
+      input {
+        height: 40px;
+        width: 100%;
+        font-size: 14px;
+        padding-inline: 8px 8px;
+      }
+      .form-radio {
+        label {
+          font-size: 14px;
+        }
+        input {
+          width: 14px;
+          height: 14px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .form-row input {
+      padding-inline: 12px;
+    }
+  }
+  @media (min-width: 1200px) and (max-width: 1440px) {
   }
 `;

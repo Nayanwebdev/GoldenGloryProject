@@ -321,6 +321,9 @@ const Wrapper = styled.div`
         }
         .right-profile-data-pp {
           width: 60%;
+          .personal-info-block-pp {
+            padding: 20px 10px;
+          }
         }
       }
     }
@@ -391,7 +394,8 @@ const Wrapper = styled.div`
           }
         }
         .right-profile-data-pp {
-          /* width: 60%; */
+          .personal-info-block-pp {
+          }
         }
       }
     }

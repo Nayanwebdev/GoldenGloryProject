@@ -82,7 +82,7 @@ export default function Footer() {
         <div className="container">
           <div className="footer-bottom-in-hp">
             <div className="copyright-hp">
-              <p>© 2021 golden glory. All Right Reserved.</p>
+              <p>© 2023 golden glory. All Right Reserved.</p>
             </div>
             <div className="payment-method-hp">
               <ul>

@@ -63,41 +63,16 @@ export default function SingleProduct() {
     { imgSrc: img6, title: "Pearls Earrings", discPrice: "$649", price: "$555" },
   ];
 
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1250,
-        settings: {
-          dots: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          dots: false,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 550,
-        settings: {
-          dots: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  const settings = {
+    showArrows: false,
+    infiniteLoop: true,
+    showStatus: false,
+    transitionTime: 500,
+    showIndicators: false,
+    swipeable: true,
+    emulateTouch: true,
+}
+
 
   return (
     <Wrapper>
@@ -106,7 +81,7 @@ export default function SingleProduct() {
         <div className="container">
           <div className="single-product-in-spp">
             <div className="left-img-block-spp">
-              <Carousel showArrows={false} showIndicators={false} showStatus={false}>
+              <Carousel {...settings} >
                 {productImgs.map((imgSrc, i) => (
                   <div className="slider-img-spp" key={i}>
                     <img src={imgSrc} alt="product" />
@@ -526,7 +501,7 @@ const Wrapper = styled.div`
                   .slider-img-spp {
                     height: 300px;
                     img {
-                      object-fit: cover;
+                      object-fit: contain;
                     }
                   }
                 }

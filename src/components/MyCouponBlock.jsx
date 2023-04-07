@@ -4,9 +4,10 @@ import styled from "styled-components";
 
 const MyCouponBlock = () => {
   const cards = [
-    { title: "Get 5% off upto ₹100", valid: "Valid till 7 Apr, 2023", payLink: "Get extra 5% off upto ₹100 on 1 item(s) (price inclusive of cashback/coupon)" },
-    { title: "Get 5% off upto ₹100", valid: "Valid till 7 Apr, 2023", payLink: "Get extra 5% off upto ₹100 on 1 item(s) (price inclusive of cashback/coupon)" },
-    { title: "Get 5% off upto ₹100", valid: "Valid till 7 Apr, 2023", payLink: "Get extra 5% off upto ₹100 on 1 item(s) (price inclusive of cashback/coupon)" },
+    { link: "Get additional ₹5000 off on th", valid: "Valid till 7 Apr, 2023", payQuote: "Get extra ₹5000 off" },
+    { link: "Get 5% off upto ₹100", valid: "Valid till 7 Apr, 2023", payQuote: "Get extra 5% off upto ₹100" },
+    { link: "Get additional ₹4000 off on th", valid: "Valid till 7 Apr, 2023", payQuote: "Get extra ₹4000 off" },
+    { link: "Get additional ₹5000 off on th", valid: "Valid till 7 Apr, 2023", payQuote: "Get extra ₹5000 off" },
   ];
   return (
     <Wrapper>
@@ -17,14 +18,14 @@ const MyCouponBlock = () => {
             <div className="save-card" key={i}>
               <div className="card-title">
                 <div className="title">
-                  <a href="">{card.title}</a>
+                  <a href="">{card.link}</a>
                 </div>
                 <div className="valid">
                   <h5>{card.valid}</h5>
                 </div>
               </div>
               <div className="card-number">
-                <span>{card.payLink}</span>
+                <span>{card.payQuote} on 1 item(s) (price inclusive of cashback/coupon)</span>
               </div>
             </div>
           ))}
@@ -58,8 +59,8 @@ const Wrapper = styled.div`
           margin-bottom: 20px;
           .title {
             a {
-              font-size: 14px;
-              line-height: 20px;
+              font-size: 16px;
+              line-height: 22px;
               font-weight: 500;
               color: #26a541;
             }

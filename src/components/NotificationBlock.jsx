@@ -147,6 +147,18 @@ const Wrapper = styled.div`
       padding-right: 10px;
       padding-top: 6px;
     }
+    .empty-block img {
+      width: 100% !important;
+    }
+    .empty-block span {
+      font-size: 15px !important;
+      margin-top: 20px !important;
+    }
+    .empty-block p {
+      font-size: 12px !important;
+      line-height: 16px !important;
+      margin-top: 8px !important;
+    }
   }
   @media (min-width: 576px) and (max-width: 767px) {
     .wishlist-block-main .wishlist-block-in .wishlist-block .wish-card {
@@ -160,6 +172,18 @@ const Wrapper = styled.div`
     .wishlist-block-main .wishlist-block-in .wishlist-block .wish-card .right-text a {
       padding-right: 10px;
       padding-top: 6px;
+    }
+    .empty-block img {
+      width: 100% !important;
+    }
+    .empty-block span {
+      font-size: 15px !important;
+      margin-top: 20px !important;
+    }
+    .empty-block p {
+      font-size: 12px !important;
+      line-height: 16px !important;
+      margin-top: 8px !important;
     }
   }
 `;

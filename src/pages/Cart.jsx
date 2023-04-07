@@ -398,6 +398,18 @@ const Wrapper = styled.div`
         line-height: 16px;
       }
     }
+    .empty-block img {
+      width: 100% !important;
+    }
+    .empty-block span {
+      font-size: 15px !important;
+      margin-top: 20px !important;
+    }
+    .empty-block p {
+      font-size: 12px !important;
+      line-height: 16px !important;
+      margin-top: 8px !important;
+    }
   }
   @media (min-width: 576px) and (max-width: 767px) {
     .cart-block-main-cp {
@@ -457,6 +469,18 @@ const Wrapper = styled.div`
       font-size: 14px;
       padding-left: 6px;
       margin-top: 5px;
+    }
+    .empty-block img {
+      width: 100% !important;
+    }
+    .empty-block span {
+      font-size: 15px !important;
+      margin-top: 20px !important;
+    }
+    .empty-block p {
+      font-size: 12px !important;
+      line-height: 16px !important;
+      margin-top: 8px !important;
     }
   }
   @media (min-width: 768px) and (max-width: 991px) {

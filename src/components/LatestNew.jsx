@@ -2,8 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import TitleMain from "./TitleMain";
-import newsImg from "../assets/images/news_img.png";
-import newsImg1 from "../assets/images/news_img_2.png";
+import newsImg from "../assets/images/news_img.webp";
+import newsImg1 from "../assets/images/news_img_2.webp";
 
 export default function LatestNew() {
   const news = [

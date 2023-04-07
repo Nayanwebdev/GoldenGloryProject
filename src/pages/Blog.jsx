@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import BlogCard from "../components/BlogCard";
 import PageBanner from "../components/PageBanner";
-import blogImg1 from "../assets/images/blog_img_1.png";
-import blogImg2 from "../assets/images/blog_img_2.png";
-import blogImg3 from "../assets/images/blog_img_3.png";
-import blogImg4 from "../assets/images/blog_img_4.png";
-import blogImg5 from "../assets/images/blog_img_5.png";
-import blogImg6 from "../assets/images/blog_img_6.png";
+import blogImg1 from "../assets/images/blog_img_1.webp";
+import blogImg2 from "../assets/images/blog_img_2.webp";
+import blogImg3 from "../assets/images/blog_img_3.webp";
+import blogImg4 from "../assets/images/blog_img_4.webp";
+import blogImg5 from "../assets/images/blog_img_5.webp";
+import blogImg6 from "../assets/images/blog_img_6.webp";
 import SideBar from "../components/SideBar";
 
 export default function Blog() {

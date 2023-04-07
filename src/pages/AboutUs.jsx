@@ -3,7 +3,7 @@ import styled from "styled-components";
 import BasicAccordion from "../components/BasicAccordion";
 import PageBanner from "../components/PageBanner";
 import TitleMain from "../components/TitleMain";
-import aboutStoryRightBg from "../assets/images/about_story_right.png";
+import aboutStoryRightBg from "../assets/images/about_story_right.webp";
 import WhyChoose from "../components/WhyChoose";
 import OurTeam from "../components/OurTeam";
 

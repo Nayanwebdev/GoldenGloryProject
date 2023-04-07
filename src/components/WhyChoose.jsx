@@ -5,7 +5,7 @@ import bulbImg from "../assets/images/bulb_icon.svg";
 import deliveryImg from "../assets/images/delivery_done_icon.svg";
 import returnImg from "../assets/images/return_icon.svg";
 import supportImg from "../assets/images/support_icon.svg";
-import wcuImg from "../assets/images/why_choose_video.png";
+import wcuImg from "../assets/images/why_choose_video.webp";
 
 export default function WhyChoose() {
   const earings = [

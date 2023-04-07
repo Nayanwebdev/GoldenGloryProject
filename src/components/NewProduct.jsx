@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import newProductImg from "../assets/images/new_arrival_set.png";
+import newProductImg from "../assets/images/new_arrival_set.webp";
 
 export default function NewProduct() {
   const newArrival = [{ title: "New arrivals", disc: "40% Discount", subTitle: "on jewellary", imgSrc: newProductImg }];

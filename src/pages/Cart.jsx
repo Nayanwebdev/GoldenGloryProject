@@ -8,7 +8,9 @@ export default function Cart() {
   const contact = () => {
     swal(" website is still under construction");
   };
-  const cartitems = [{ name: "peackock earings", imgSrc: productImg, eligible: "in-stock", size: 5, color: "golden", price: "$499", shiping: "eligible for free shipping" }];
+  const cartitems = [
+    { name: "peackock earings", imgSrc: productImg, eligible: "in-stock", size: 5, color: "golden", price: "$499", shiping: "eligible for free shipping" }
+  ];
   console.log(cartitems);
   return (
     <Wrapper>

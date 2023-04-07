@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import leftads from "../assets/images/left_ads_card.png";
-import rightads from "../assets/images/right_ads_card.png";
+import leftads from "../assets/images/left_ads_card.webp";
+import rightads from "../assets/images/right_ads_card.webp";
 
 export default function Ads() {
   return (

@@ -5,7 +5,7 @@ import SpecialProductCard from "./SpecialProductCard";
 import spImg1 from "../assets/images/bangels_sp.png";
 import spImg2 from "../assets/images/Pearls_Breslate_sp.png";
 import spImg3 from "../assets/images/Peacock_Earrings_sp.png";
-import collectionImg from "../assets/images/collection_img.png";
+import collectionImg from "../assets/images/collection_img.webp";
 
 const FilterProduct = () => {
   const categories = ["diamonds", "gold", "earrings", "chains", "nacklace"];

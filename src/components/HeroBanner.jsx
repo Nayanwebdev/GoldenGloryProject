@@ -3,8 +3,8 @@ import styled from "styled-components";
 import deliveryImg from "../assets/images/delivery_done_icon.svg";
 import returnImg from "../assets/images/return_icon.svg";
 import supportImg from "../assets/images/support_icon.svg";
-import banneImg from "../assets/images/b1.png";
-import productImg from "../assets/images/earring_img.png";
+import banneImg from "../assets/images/b1.webp";
+import productImg from "../assets/images/earring_img.webp";
 import { NavLink } from "react-router-dom";
 
 export default function HeroBanner() {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import bannerImg from "../assets/images/pagebanner_img.png";
+import bannerImg from "../assets/images/pagebanner_img.webp";
 import { Link } from "react-router-dom";
 
 export default function PageBanner({  pageTitle,pageLink }) {

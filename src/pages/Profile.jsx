@@ -18,7 +18,7 @@ import SaveUpi from "../components/SaveUpiBlock";
 import ReviewWrite from "../components/ReviewWriteBlock";
 import Notification from "../components/NotificationBlock";
 import Wishlist from "../components/MyWishlistBlock";
-import bottomBg from "../assets/images/info_footer_bg.png";
+import bottomBg from "../assets/images/info_footer_bg.webp";
 
 export default function Profile() {
   const accordionData = [

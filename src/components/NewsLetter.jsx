@@ -1,9 +1,8 @@
 import { NavLink } from "react-router-dom";
 import TitleMain from "../components/TitleMain";
 import styled from "styled-components";
-import mewsLetterImg from "../assets/images/newsletter_img.png";
-import earingImg from "../assets/images/earring_img_2.png";
-import Button from "./Button";
+import mewsLetterImg from "../assets/images/newsletter_img.webp";
+import earingImg from "../assets/images/earring_img_2.webp";
 
 export default function NewsLetter() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import CollectionImg from "../assets/images/Special_collection.png";
+import CollectionImg from "../assets/images/Special_collection.webp";
 import TitleMain from "./TitleMain";
 import { NavLink } from "react-router-dom";
 

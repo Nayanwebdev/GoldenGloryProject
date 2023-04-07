@@ -80,6 +80,7 @@ const Wrapper = styled.div`
     }
     .save-card-block-main .save-card-block-in .save-card .card-title {
       align-items: flex-start;
+      gap: 6px;
     }
     .save-card-block-main .save-card-block-in .save-card {
       padding: 16px 10px;

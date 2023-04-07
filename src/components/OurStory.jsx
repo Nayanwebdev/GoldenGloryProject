@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import storyRight from "../assets/images/Story_img.webp";
-import storyRightSub from "../assets/images/Story_img_1.webp";
+import storyRight from "../assets/images/story_img.webp";
+import storyRightSub from "../assets/images/story_img_1.webp";
 import TitleMain from "./TitleMain";
 import { NavLink } from "react-router-dom";
 

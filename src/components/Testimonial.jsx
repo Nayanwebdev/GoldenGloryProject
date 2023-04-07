@@ -5,9 +5,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TestimonialCard from "./TestimonialCard";
-import testiImg from "../assets/images/Wedding_Rings.webp";
-import testiImg2 from "../assets/images/Wedding_Rings.webp";
-import testiImg3 from "../assets/images/Wedding_Rings.webp";
+import testiImg from "../assets/images/wedding_rings.webp";
+import testiImg2 from "../assets/images/wedding_rings.webp";
+import testiImg3 from "../assets/images/wedding_rings.webp";
 
 export default function Testimonial() {
   const testimonials = [

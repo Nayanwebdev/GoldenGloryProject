@@ -5,18 +5,7 @@ import orderImg from "../assets/images/Pearls_Earring_7.png";
 import orderImg1 from "../assets/images/credcard_img.jpg";
 
 const MyWishlistBlock = () => {
-  const wishlists = [
-    {
-      imgSrc: orderImg1,
-      text: "📢📢 Earn 4X SuperCoins or 5% Unlimited Cashback. Apply Now",
-      date: "10 Mar 2022",
-    },
-    {
-      imgSrc: orderImg,
-      text: "The refund amount for your order ... has been successfully processed. details, click here",
-      date: "10 Mar 2023",
-    },
-  ];
+  const wishlists = [];
   return (
     <Wrapper>
       <div className="wishlist-block-main">

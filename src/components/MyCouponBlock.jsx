@@ -115,4 +115,16 @@ const Wrapper = styled.div`
       display: block;
     }
   }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .save-upi-block-main .save-upi-block-in .save-card {
+      padding-inline: 15px;
+    }
+    .save-upi-block-main .save-upi-block-in .save-card .card-title .title a {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .save-upi-block-main .save-upi-block-in .save-card .card-title .valid h5 {
+      font-size: 12px;
+    }
+  }
 `;

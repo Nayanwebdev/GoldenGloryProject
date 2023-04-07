@@ -2,11 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import productImg from "../assets/images/Pearls_Earring_7.png";
 import swal from "sweetalert";
+import emptyWishlist from "../assets/images/empty_wishlist.png";
 
 export default function Cart() {
   const contact = () => {
     swal(" website is still under construction");
   };
+  const cartitems = [{ name: "peackock earings", imgSrc: productImg, eligible: "in-stock", size: 5, color: "golden", price: "$499", shiping: "eligible for free shipping" }];
+  console.log(cartitems);
   return (
     <Wrapper>
       <div className="cart-block-main-cp">
@@ -14,48 +17,62 @@ export default function Cart() {
           <div className="cart-block-in-cp">
             <div className="cart-left-cp">
               <div className="title-cp">shopping cart</div>
-
-              <div className="product-detail-block-cp">
-                <div className="product-detail-cp">
-                  <div className="product-img-cp">
-                    <img src={productImg} alt="cart-product" />
-                  </div>
-                  <div className="product-data-cp">
-                    <div className="title">
-                      <h3>peackock earings</h3>
+              {cartitems.length > 0 ? (
+                <>
+                  {cartitems.map((item, i) => (
+                    <div className="product-detail-block-cp" key={i}>
+                      <div className="product-detail-cp">
+                        <div className="product-img-cp">
+                          <img src={item.imgSrc} alt="cart-product" />
+                        </div>
+                        <div className="product-data-cp">
+                          <div className="title">
+                            <h3>{item.name}</h3>
+                          </div>
+                          <div className="availability">
+                            <span className={`${item.eligible}`}>{item.eligible}</span>
+                          </div>
+                          <div className="shipping">
+                            <h3>{item.shiping}</h3>
+                          </div>
+                          <div className="color">
+                            color : <span>golden</span>
+                          </div>
+                          <div className="size">
+                            size : <span>5</span>
+                          </div>
+                          <div className="quantity">
+                            <select id="slct" required="required">
+                              <option value="" disabled="disabled" defaultValue="selected">
+                                Qty
+                              </option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                            </select>
+                          </div>
+                          <div className="action">
+                            <button>SAVE FOR LATER</button>
+                            <button>REMOVE</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="product-price-cp">
+                        <h3>$499</h3>
+                      </div>
                     </div>
-                    <div className="availability">
-                      <span className="in-stock">In stock</span>
-                      <span className="out-stock">Out stock</span>
-                    </div>
-                    <div className="shipping">
-                      <h3>Eligible for FREE Shipping</h3>
-                    </div>
-                    <div className="color">
-                      color : <span>golden</span>
-                    </div>
-                    <div className="size">
-                      size : <span>5</span>
-                    </div>
-                    <div className="quantity">
-                      <select id="slct" required="required">
-                        <option value="" disabled="disabled" defaultValue="selected">
-                          Qty
-                        </option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                      </select>
-                    </div>
-                  </div>
+                  ))}
+                </>
+              ) : (
+                <div className="empty-block">
+                  <img src={emptyWishlist} alt="" />
+                  <span>Empty cart</span>
+                  <p>You have no items in your Cart. Start adding!</p>
                 </div>
-                <div className="product-price-cp">
-                  <h3>$499</h3>
-                </div>
-              </div>
+              )}
 
               <div className="cart-total-cp">
                 <h3>
@@ -135,7 +152,6 @@ const Wrapper = styled.div`
                 span {
                   font-size: 14px;
                   line-height: 22px;
-                  color: #007600;
                 }
                 .in-stock {
                   color: #007600;
@@ -149,6 +165,7 @@ const Wrapper = styled.div`
                   font-size: 14px;
                   line-height: 22px;
                   color: #565959;
+                  text-transform: uppercase;
                 }
               }
               .color {
@@ -265,6 +282,42 @@ const Wrapper = styled.div`
       box-shadow: none;
     }
   }
+  .action {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    button {
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      background: none;
+      color: var(--text-color);
+      &:hover {
+        color: var(--golden-color);
+      }
+    }
+  }
+  .empty-block {
+    padding-block: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 250px;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+    span {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  }
 
   @media (min-width: 0px) and (max-width: 575px) {
     .cart-block-main-cp {
@@ -334,6 +387,16 @@ const Wrapper = styled.div`
       font-size: 14px;
       padding-left: 6px;
       margin-top: 5px;
+    }
+    .action {
+      gap: 5px;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 12px;
+      button {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
   }
   @media (min-width: 576px) and (max-width: 767px) {

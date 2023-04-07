@@ -46,7 +46,7 @@ export default function LatestNew() {
 }
 
 const Wrapper = styled.div`
-  padding-block: 100px;
+  padding-block: 50px 100px;
   .news-block-hp {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

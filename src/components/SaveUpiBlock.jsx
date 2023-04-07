@@ -82,8 +82,11 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 0px) and (max-width: 575px) {
+    .save-upi-block-main .save-upi-block-in .save-card .card-title {
+      margin-bottom: 10px;
+    }
     .save-upi-block-main .save-upi-block-in .save-card {
-      padding: 16px;
+      padding: 14px 10px;
     }
     .save-upi-block-main .save-upi-block-in .save-card .card-number img {
       width: 20px;
@@ -91,6 +94,9 @@ const Wrapper = styled.div`
     .save-upi-block-main .save-upi-block-in .save-card .card-number span {
       font-size: 13px;
       margin-left: 5px;
+    }
+    .delete a img {
+      height: 14px;
     }
   }
   @media (min-width: 576px) and (max-width: 767px) {

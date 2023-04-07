@@ -172,4 +172,103 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (min-width: 0px) and (max-width: 575px) {
+    .review-block-main {
+      .review-block-in {
+        .review-card {
+          flex-direction: column;
+          padding: 14px 10px !important;
+          .review-img {
+            margin: auto;
+          }
+          .review-content {
+            .product-name {
+              font-size: 14px;
+              line-height: 18px;
+            }
+            .review {
+              gap: 10px;
+              padding-bottom: 5px;
+              .star {
+                padding: 2px 4px;
+                font-size: 12px;
+                img {
+                  height: 8px;
+                }
+              }
+              span {
+                font-size: 12px;
+              }
+            }
+            .text {
+              margin-block: 6px;
+              p {
+                font-size: 13px;
+                line-height: 18px;
+              }
+            }
+            .reviewer-detail {
+              padding-bottom: 8px;
+              flex-wrap: wrap;
+              gap: 2px 8px;
+            }
+            .action {
+              gap: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .review-block-main {
+      .review-block-in {
+        .review-card {
+          flex-direction: column;
+          padding: 14px 10px !important;
+          .review-img {
+            margin: auto;
+          }
+          .review-content {
+            .product-name {
+              font-size: 14px;
+              line-height: 18px;
+            }
+            .review {
+              gap: 10px;
+              padding-bottom: 5px;
+              .star {
+                padding: 2px 4px;
+                font-size: 12px;
+              }
+            }
+            .text {
+              margin-block: 6px;
+              p {
+                font-size: 13px;
+                line-height: 18px;
+              }
+            }
+            .reviewer-detail {
+              padding-bottom: 8px;
+              flex-wrap: wrap;
+              gap: 2px 8px;
+            }
+            .action {
+              gap: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .product-name {
+      font-size: 15px !important;
+    }
+    .review-block-main .review-block-in .review-card .review-content .review {
+      padding-bottom: 0px;
+    }
+  }
 `;

@@ -129,4 +129,37 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (min-width: 0px) and (max-width: 575px) {
+    .wishlist-block-main .wishlist-block-in .wishlist-block .wish-card {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+    .wishlist-block-main .wishlist-block-in .wishlist-block .wish-card .right-text h5 {
+      font-size: 13px;
+    }
+    .wishlist-block-main .wishlist-block-in .wishlist-block .wish-card .right-text {
+      width: 100%;
+    }
+    .wishlist-block-main .wishlist-block-in .wishlist-block .wish-card .right-text a {
+      font-size: 12px;
+      padding-right: 10px;
+      padding-top: 6px;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    .wishlist-block-main .wishlist-block-in .wishlist-block .wish-card {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+    .wishlist-block-main .wishlist-block-in .wishlist-block .wish-card .right-text {
+      width: 100%;
+    }
+    .wishlist-block-main .wishlist-block-in .wishlist-block .wish-card .right-text a {
+      padding-right: 10px;
+      padding-top: 6px;
+    }
+  }
 `;

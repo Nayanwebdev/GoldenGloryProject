@@ -1,8 +1,6 @@
 import React from "react";
 import emptyWishlist from "../assets/images/empty_wishlist.png";
 import styled from "styled-components";
-import orderImg from "../assets/images/Pearls_Earring_7.png";
-import orderImg1 from "../assets/images/credcard_img.jpg";
 
 const MyWishlistBlock = () => {
   const wishlists = [];

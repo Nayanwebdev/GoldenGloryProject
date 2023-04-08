@@ -52,7 +52,7 @@ const Wrapper = styled.div`
         &::after {
           content: "";
           position: absolute;
-          background-image: url("/Ourstory.png");
+          background-image: url("/Ourstory.webp");
           background-repeat: no-repeat;
           background-size: contain;
           width: 1200px;

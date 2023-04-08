@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import emptyWishlist from "../assets/images/empty_wishlist.png";
-import orderImg from "../assets/images/Pearls_Earring_7.png";
+import orderImg from "../assets/images/Pearls_Earring_7.webp";
 import orderImg1 from "../assets/images/credcard_img.jpg";
 
 const NotificationBlock = () => {

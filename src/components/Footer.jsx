@@ -5,9 +5,9 @@ import tweetIcon from "../assets/images/footer_tweet.svg";
 import dribleIcon from "../assets/images/drible_icon.svg";
 import fbIcon from "../assets/images/fb_footer.svg";
 import Logo from "../assets/images/logo_icon.png";
-import paymentImg1 from "../assets/images/payment_method_1.png";
-import paymentImg2 from "../assets/images/payment_method_2.png";
-import paymentImg3 from "../assets/images/payment_method_3.png";
+import paymentImg1 from "../assets/images/payment_method_1.webp";
+import paymentImg2 from "../assets/images/payment_method_2.webp";
+import paymentImg3 from "../assets/images/payment_method_3.webp";
 
 export default function Footer() {
   const socials = [instaIcon, tweetIcon, dribleIcon, fbIcon];

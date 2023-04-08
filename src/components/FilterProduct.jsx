@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
 import SpecialProductCard from "./SpecialProductCard";
-import spImg1 from "../assets/images/bangels_sp.png";
-import spImg2 from "../assets/images/Pearls_Breslate_sp.png";
-import spImg3 from "../assets/images/Peacock_Earrings_sp.png";
+import spImg1 from "../assets/images/bangels_sp.webp";
+import spImg2 from "../assets/images/Pearls_Breslate_sp.webp";
+import spImg3 from "../assets/images/Peacock_Earrings_sp.webp";
 import collectionImg from "../assets/images/collection_img.webp";
 
 const FilterProduct = () => {

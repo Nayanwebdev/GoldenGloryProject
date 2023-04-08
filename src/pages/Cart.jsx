@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import productImg from "../assets/images/Pearls_Earring_7.png";
+import productImg from "../assets/images/Pearls_Earring_7.webp";
 import swal from "sweetalert";
 import emptyWishlist from "../assets/images/empty_wishlist.png";
 

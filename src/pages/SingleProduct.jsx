@@ -7,17 +7,17 @@ import RatingBlock from "../components/Rating";
 import MyNavTab from "../components/MyNavTab";
 import ProductCard from "../components/ProductCard";
 import { Carousel } from "react-responsive-carousel";
-import pImg from "../assets/images/peackock_product_img.png";
-import pImg2 from "../assets/images/peackock_product_img.png";
-import pImg3 from "../assets/images/peackock_product_img.png";
-import pImg4 from "../assets/images/peackock_product_img.png";
-import img from "../assets/images/Peacock_Earrings.png";
-import img1 from "../assets/images/Pearls_Breslate_1.png";
-import img2 from "../assets/images/Pearls_Breslate_2.png";
-import img3 from "../assets/images/Pearls_Earring_1.png";
-import img4 from "../assets/images/Pearls_Earring_2.png";
-import img5 from "../assets/images/Pearls_Earring_3.png";
-import img6 from "../assets/images/Pearls_Earring_4.png";
+import pImg from "../assets/images/peackock_product_img.webp";
+import pImg2 from "../assets/images/peackock_product_img.webp";
+import pImg3 from "../assets/images/peackock_product_img.webp";
+import pImg4 from "../assets/images/peackock_product_img.webp";
+import img from "../assets/images/Peacock_Earrings.webp";
+import img1 from "../assets/images/Pearls_Breslate_1.webp";
+import img2 from "../assets/images/Pearls_Breslate_2.webp";
+import img3 from "../assets/images/Pearls_Earring_1.webp";
+import img4 from "../assets/images/Pearls_Earring_2.webp";
+import img5 from "../assets/images/Pearls_Earring_3.webp";
+import img6 from "../assets/images/Pearls_Earring_4.webp";
 
 export default function SingleProduct() {
   const [num, setNum] = useState(0);

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import orderImg from "../assets/images/Pearls_Earring_7.png";
+import orderImg from "../assets/images/Pearls_Earring_7.webp";
 
 const AllOrderBlock = () => {
   const orders = [

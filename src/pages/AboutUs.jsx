@@ -59,7 +59,7 @@ const Wrapper = styled.div`
           ::before {
             content: "";
             position: absolute;
-            background: url("/about_story_bg.png");
+            background: url("/about_story_bg.webp");
             background-size: cover;
             background-repeat: no-repeat;
             height: 642px;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import orderImg from "../assets/images/Pearls_Earring_7.png";
+import orderImg from "../assets/images/Pearls_Earring_7.webp";
 import star from "../assets/images/star.svg";
 import certify from "../assets/images/certify_icon.svg";
 

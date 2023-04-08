@@ -5,18 +5,18 @@ import ProductCard from "./ProductCard";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
 import background from "../assets/images/mostpopular_bg.webp";
-import img from "../assets/images/Peacock_Earrings.png";
-import img1 from "../assets/images/Pearls_Breslate_1.png";
-import img2 from "../assets/images/Pearls_Breslate_2.png";
-import img3 from "../assets/images/Pearls_Earring_1.png";
-import img4 from "../assets/images/Pearls_Earring_2.png";
-import img5 from "../assets/images/Pearls_Earring_3.png";
-import img6 from "../assets/images/Pearls_Earring_4.png";
-import img7 from "../assets/images/perarls_ring_2.png";
-import img8 from "../assets/images/Pearls_Earring_5.png";
-import img9 from "../assets/images/Pearls_Earring_6.png";
-import img10 from "../assets/images/Pearls_Earring_7.png";
-import img11 from "../assets/images/bangels.png";
+import img from "../assets/images/Peacock_Earrings.webp";
+import img1 from "../assets/images/Pearls_Breslate_1.webp";
+import img2 from "../assets/images/Pearls_Breslate_2.webp";
+import img3 from "../assets/images/Pearls_Earring_1.webp";
+import img4 from "../assets/images/Pearls_Earring_2.webp";
+import img5 from "../assets/images/Pearls_Earring_3.webp";
+import img6 from "../assets/images/Pearls_Earring_4.webp";
+import img7 from "../assets/images/perarls_ring_2.webp";
+import img8 from "../assets/images/Pearls_Earring_5.webp";
+import img9 from "../assets/images/Pearls_Earring_6.webp";
+import img10 from "../assets/images/Pearls_Earring_7.webp";
+import img11 from "../assets/images/bangels.webp";
 
 export default function MostPopular() {
   const products = [

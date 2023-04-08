@@ -15,7 +15,7 @@ const ManageAddressBlock = () => {
           <div className="address-box-adb" key={address.id}>
             <div className="action-main">
               <div className="action-in">
-                <img src={editImg} />
+                <img src={editImg} alt="edit" loading="lazy" />
                 <div className="action-btn">
                   <div className="action-btn-in">
                     <span>Edit</span>

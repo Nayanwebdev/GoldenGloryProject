@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="footer-about-hp">
               <div className="logo-hp">
                 <div className="nav-brand-ggp">
-                  <img src={Logo} alt="logo" />
+                  <img src={Logo} alt="logo" loading="lazy" />
                   <h2>golden glory</h2>
                 </div>
               </div>
@@ -33,7 +33,7 @@ export default function Footer() {
                 {socials.map((icon, index) => (
                   <li key={index}>
                     <a href="#">
-                      <img src={icon} alt="social-media" />
+                      <img src={icon} alt="social-media" loading="lazy" />
                     </a>
                   </li>
                 ))}
@@ -88,7 +88,7 @@ export default function Footer() {
               <ul>
                 {payments.map((pay, i) => (
                   <li key={i}>
-                    <img src={pay} alt="pay-img" />
+                    <img src={pay} alt="pay-img" loading="lazy" />
                   </li>
                 ))}
               </ul>

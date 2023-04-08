@@ -19,7 +19,7 @@ export default function LatestNew() {
           {news.map((newsItem, index) => (
             <div className="news-card-hp" key={index}>
               <div className="news-img-hp">
-                <img src={newsItem.imgSrc} alt="newsImg" />
+                <img src={newsItem.imgSrc} alt="newsImg" loading="lazy" />
               </div>
               <div className="news-content-main-hp">
                 <div className="news-content-in-hp">

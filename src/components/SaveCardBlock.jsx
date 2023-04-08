@@ -21,7 +21,7 @@ const SaveCardBlock = () => {
                 <div className="title">{card.title}</div>
                 <div className="delete">
                   <a href="">
-                    <img src={deleteIcon} alt="delete" />
+                    <img src={deleteIcon} alt="delete" loading="lazy"/>
                   </a>
                 </div>
               </div>

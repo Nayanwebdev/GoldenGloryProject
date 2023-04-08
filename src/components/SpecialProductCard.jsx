@@ -8,7 +8,7 @@ export default function SpecialProductCard({ imgSrc, rating, title, price, discP
       <div className="special-product-card-spc">
         <div className="special-product-card-in-spc">
           <div className="product-img-spc">
-            <img src={imgSrc} alt="productImg" />
+            <img src={imgSrc} alt="productImg" loading="lazy"/>
           </div>
           <div className="product-content-spc">
             <h3>{title}</h3>

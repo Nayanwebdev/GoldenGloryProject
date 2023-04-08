@@ -6,7 +6,7 @@ export default function TestimonialCard({ cardImg, desc, person, city }) {
     <Wrapper>
       <div className="testimonial-card-main-tcc">
         <div className="img-block">
-          <img src={cardImg} alt="card-img" />
+          <img src={cardImg} alt="card-img" loading="lazy"/>
         </div>
         <div className="content-block">
           <div className="quet-img">

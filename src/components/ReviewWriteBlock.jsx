@@ -29,13 +29,13 @@ const ReviewWriteBlock = () => {
           {reviews.map((review, i) => (
             <div className="review-card" key={i}>
               <div className="review-img">
-                <img src={review.imgSrc} alt="" />
+                <img src={review.imgSrc} alt="review" loading="lazy"/>
               </div>
               <div className="review-content">
                 <div className="product-name">{review.name}</div>
                 <div className="review">
                   <div className="star">
-                    5 <img src={star} alt="" />
+                    5 <img src={star} alt="star" loading="lazy"/>
                   </div>
                   <span>Just Wow!</span>
                 </div>
@@ -47,7 +47,7 @@ const ReviewWriteBlock = () => {
                 <div className="reviewer-detail">
                   <div className="person">{review.reviewrName}</div>
                   <div className="person-certify">
-                    <img src={certify} alt="certify" /> Certified Buyer
+                    <img src={certify} alt="certify" loading="lazy"/> Certified Buyer
                   </div>
                   <div className="review-date">{review.reviewrDate}</div>
                 </div>

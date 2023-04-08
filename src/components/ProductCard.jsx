@@ -8,15 +8,15 @@ export default function ProductCard({ imgSrc, title, discPrice, price }) {
   return (
     <Wrapper>
       <div className="card-img-cb">
-        <img src={imgSrc} alt="card-img" />
+        <img src={imgSrc} alt="card-img" loading="lazy"/>
         <div className="search">
           <a href="#">
-            <img src={searchIcon} alt="searchIcon" />
+            <img src={searchIcon} alt="searchIcon" loading="lazy"/>
           </a>
         </div>
         <div className="like">
           <a href="#">
-            <img src={likeIcon} alt="likeIcon" />
+            <img src={likeIcon} alt="likeIcon" loading="lazy"/>
           </a>
         </div>
         <div className="add-to-cart-cb">

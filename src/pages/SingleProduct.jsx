@@ -84,7 +84,7 @@ export default function SingleProduct() {
               <Carousel {...settings} >
                 {productImgs.map((imgSrc, i) => (
                   <div className="slider-img-spp" key={i}>
-                    <img src={imgSrc} alt="product" />
+                    <img src={imgSrc} alt="product" loading="lazy"/>
                   </div>
                 ))}
               </Carousel>

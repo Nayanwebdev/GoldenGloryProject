@@ -10,7 +10,7 @@ export default function ErrorPage() {
         <div className="container">
           <div className="row">
             <div className="col-md-6 align-self-center">
-              <img src={errImg} alt="errImg" />
+              <img src={errImg} alt="errImg" loading="lazy"  />
             </div>
             <div className="col-md-6 align-self-center">
               <h1>404</h1>

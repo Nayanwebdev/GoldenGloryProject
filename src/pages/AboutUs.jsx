@@ -28,7 +28,7 @@ export default function AboutUs() {
               </div>
               <div className="right-block-abp">
                 <div className="right-img-abp">
-                  <img src={aboutStoryRightBg} alt="storyRight" />
+                  <img src={aboutStoryRightBg} alt="storyRight" loading="lazy"/>
                 </div>
               </div>
             </div>

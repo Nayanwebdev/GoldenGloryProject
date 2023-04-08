@@ -25,12 +25,12 @@ export default function NewsLetter() {
           </div>
           <div className="right-block-hp">
             <div className="right-block-img-hp">
-              <img src={mewsLetterImg} alt="newsletter img" />
+              <img src={mewsLetterImg} alt="newsletter img" loading="lazy"/>
               <div className="right-block-title-hp">
                 <TitleMain mainTitle="Aqua RoseGold" subTitle="Summer Collection" />
               </div>
               <div className="earing-img-hp">
-                <img src={earingImg} alt="earingImg" />
+                <img src={earingImg} alt="earingImg" loading="lazy"/>
               </div>
               <div className="earing-detail-hp">
                 <h3>earrings</h3>

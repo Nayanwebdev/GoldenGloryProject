@@ -52,24 +52,24 @@ export default function OurTeam() {
             {members.map((member, i) => (
               <div className="team-member" key={i}>
                 <div className="member-img">
-                  <img src={member.imgSrc} alt="Team Member" />
+                  <img src={member.imgSrc} alt="Team Member" loading="lazy"/>
                 </div>
                 <h2>{member.memberName}</h2>
                 <h3>{member.position}</h3>
                 <ul className="team-socialmedia">
                   <li>
                     <a href="#">
-                      <img src={fb} alt="" />
+                      <img src={fb} alt="social" loading="lazy"/>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src={twitter} alt="" />
+                      <img src={twitter} alt="social" loading="lazy"/>
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src={linkdin} alt="" />
+                      <img src={linkdin} alt="social" loading="lazy"/>
                     </a>
                   </li>
                 </ul>

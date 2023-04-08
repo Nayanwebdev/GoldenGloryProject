@@ -10,7 +10,7 @@ export default function Ads() {
           <div className="ads-block-in-hp">
             <div className="left-ads-block-hp">
               <div className="left-box-hp">
-                <img src={leftads} alt="leftads" />
+                <img src={leftads} alt="leftads" loading="lazy" />
                 <div className="ads-content-hp">
                   <h2>Earrings</h2>
                   <h4>Find The Right Band</h4>
@@ -19,7 +19,7 @@ export default function Ads() {
             </div>
             <div className="right-ads-block-hp">
               <div className="right-box-hp">
-                <img src={rightads} alt="rightads" />
+                <img src={rightads} alt="rightads" loading="lazy" />
                 <div className="ads-content-hp">
                   <h2>Wedding</h2>
                   <h4>Shop Our New Arrivals</h4>

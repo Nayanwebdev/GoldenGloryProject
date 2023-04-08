@@ -8,7 +8,7 @@ export default function BlogCard({ title, imgSrc, postBy, comment, desc, date, m
       <div className="blog-card-block-bcc">
         <div className="blog-card-in-bcc">
           <div className="card-img-bcc">
-            <img src={imgSrc} alt="blog-img" />
+            <img src={imgSrc} alt="blog-img" loading="lazy"  />
             <div className="blog-date-bcc">
               <h3>{date}</h3>
               <h4>{month}</h4>

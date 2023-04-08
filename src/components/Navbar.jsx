@@ -35,7 +35,7 @@ export default function Navbar() {
             <div className="header-left-ggp">
               <NavLink to="/" role="button" exact="true">
                 <div className="nav-brand-ggp">
-                  <img src={Logo} alt="logo" />
+                  <img src={Logo} alt="logo" loading="lazy" />
                   <h2>golden glory</h2>
                 </div>
               </NavLink>
@@ -62,7 +62,7 @@ export default function Navbar() {
                 {navRightLinks.map((link, i) => (
                   <li key={i}>
                     <NavLink className="nav-link" to={link.href} role="button" exact="true" onClick={() => setShowNav(false)}>
-                      <img src={link.title} alt="header-icon" />
+                      <img src={link.title} alt="header-icon" loading="lazy" />
                     </NavLink>
                   </li>
                 ))}

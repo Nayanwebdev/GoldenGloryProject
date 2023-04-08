@@ -17,7 +17,7 @@ const GiftCardBlock = () => {
             <li>The Gift Cards can be redeemed online against Sellers listed on www.golden Glory.com or golden Glory Mobile App or golden Glory m-site ('Platform') only.</li>
             <li>
               Gift Cards can be purchased on
-              <a href="https://golden-glory-project.vercel.app/" target="_blank">
+              <a href="https://golden-glory-project.vercel.app/" rel="noreferrer" target="_blank">
                 https://golden-glory-project.vercel.app/
               </a>
               or golden Glory Mobile App using the following payment modes only - Credit Card, Debit Card and Net Banking.
@@ -25,7 +25,7 @@ const GiftCardBlock = () => {
             <li>Gift Cards can be redeemed by selecting the payment mode as Gift Card.</li>
           </ul>
         </div>
-        <a href="" target="_blank" className="term-condition-link">
+        <a href="" target="_blank"  className="term-condition-link">
           View all T&amp;Cs &#8250;
         </a>
       </div>

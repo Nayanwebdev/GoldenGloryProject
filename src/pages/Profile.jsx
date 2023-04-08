@@ -78,7 +78,7 @@ export default function Profile() {
               <div className="person-info-pp">
                 <div className="person-info-in-pp">
                   <div className="avatar">
-                    <img src={avtarImg} alt="avatar" />
+                    <img src={avtarImg} alt="avatar" loading="lazy"/>
                   </div>
                   <div className="profile-info">
                     <div className="hello">
@@ -95,7 +95,7 @@ export default function Profile() {
                   {accordionData.map((data, id) => (
                     <div className="detail-box" key={id}>
                       <div className="title">
-                        <img src={data.src} alt="icon" />
+                        <img src={data.src} alt="icon" loading="lazy"/>
                         <h2>{data.title}</h2>
                       </div>
                       <div className="link-list">
@@ -130,7 +130,7 @@ export default function Profile() {
                 </div>
               </div>
               <div className="bottom-img-pp">
-                <img src={bottomBg} alt="" />
+                <img src={bottomBg} alt="" loading="lazy"/>
               </div>
             </div>
           </div>

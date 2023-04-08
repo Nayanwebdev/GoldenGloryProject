@@ -100,7 +100,7 @@ const FilterProduct = () => {
           </div>
           <div className="display-collection-fltc">
             <div className="collection-img-fltc">
-              <img src={collectionImg} alt="special-collection" />
+              <img src={collectionImg} alt="special-collection" loading="lazy"  />
             </div>
             <div className="collection-content-fltc">
               <h3>Women's Collection</h3>

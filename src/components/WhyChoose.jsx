@@ -23,7 +23,7 @@ export default function WhyChoose() {
           <div className="why-choose-in-wcp">
             <div className="left-block-wcp">
               <div className="left-block-video-wcp">
-                <img src={wcuImg} alt="wcus_video" />
+                <img src={wcuImg} alt="wcus_video" loading="lazy"/>
               </div>
             </div>
             <div className="right-block-wcp">
@@ -31,7 +31,7 @@ export default function WhyChoose() {
                 {earings.map((item, i) => (
                   <div className="detail-box-wcp" key={i}>
                     <div className="icon-wcp">
-                      <img src={item.icon} alt="icon" />
+                      <img src={item.icon} alt="icon" loading="lazy"/>
                     </div>
                     <h2>{item.title}</h2>
                     <p>{item.description}</p>

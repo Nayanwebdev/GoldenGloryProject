@@ -16,7 +16,7 @@ export default function NewProduct() {
               <h3>{item.subTitle}</h3>
             </div>
             <div className="new-arrival-img-nac">
-              <img src={item.imgSrc} alt="new arrival" />
+              <img src={item.imgSrc} alt="new arrival" loading="lazy" />
             </div>
           </div>
         ))}

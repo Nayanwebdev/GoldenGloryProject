@@ -27,22 +27,22 @@ export default function HeroBanner() {
               </div>
               <div className="customer-support-hp">
                 <div className="customer-support-box-hp delivery-hp">
-                  <img src={deliveryImg} alt="del-img" />
+                  <img src={deliveryImg} alt="del-img" loading="lazy" />
                   <span>Free Delivery</span>
                 </div>
                 <div className="customer-support-box-hp return-hp">
-                  <img src={returnImg} alt="del-img" />
+                  <img src={returnImg} alt="del-img" loading="lazy"  />
                   <span>easy to return</span>
                 </div>
                 <div className="customer-support-box-hp support-hp">
-                  <img src={supportImg} alt="del-img" />
+                  <img src={supportImg} alt="del-img" loading="lazy"  />
                   <span>24H suppport</span>
                 </div>
               </div>
             </div>
             <div className="right-banner-hp">
               <div className="right-banner-img-hp">
-                <img src={banneImg} alt="btn-img" />
+                <img src={banneImg} alt="btn-img" loading="lazy"  />
               </div>
               <div className="right-banner-img-bg-hp"></div>
               <div className="right-banner-product-hp">
@@ -55,7 +55,7 @@ export default function HeroBanner() {
                   <a href="#">+</a>
                 </div>
                 <div className="product-img-hp">
-                  <img src={productImg} alt="earring" />
+                  <img src={productImg} alt="earring" loading="lazy"  />
                 </div>
               </div>
             </div>

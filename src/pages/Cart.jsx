@@ -25,7 +25,7 @@ export default function Cart() {
                     <div className="product-detail-block-cp" key={i}>
                       <div className="product-detail-cp">
                         <div className="product-img-cp">
-                          <img src={item.imgSrc} alt="cart-product" />
+                          <img src={item.imgSrc} alt="cart-product" loading="lazy"/>
                         </div>
                         <div className="product-data-cp">
                           <div className="title">
@@ -70,7 +70,7 @@ export default function Cart() {
                 </>
               ) : (
                 <div className="empty-block">
-                  <img src={emptyWishlist} alt="" />
+                  <img src={emptyWishlist} alt="emt" loading="lazy"/>
                   <span>Empty cart</span>
                   <p>You have no items in your Cart. Start adding!</p>
                 </div>

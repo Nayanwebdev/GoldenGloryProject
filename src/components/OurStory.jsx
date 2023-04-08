@@ -22,10 +22,10 @@ export default function OurStory() {
             </div>
             <div className="right-block-hp">
               <div className="right-main-img-hp">
-                <img src={storyRight} alt="storyRight" />
+                <img src={storyRight} alt="storyRight" loading="lazy" />
               </div>
               <div className="right-sub-img-hp">
-                <img src={storyRightSub} alt="storyRightSub" />
+                <img src={storyRightSub} alt="storyRightSub" loading="lazy" />
               </div>
             </div>
           </div>

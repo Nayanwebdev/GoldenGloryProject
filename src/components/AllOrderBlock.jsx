@@ -41,7 +41,7 @@ const AllOrderBlock = () => {
             <div className="order-card-main" key={i}>
               <div className="product-info-aob">
                 <div className="product-img-aob">
-                  <img src={order.imgSrc} alt="product-data" />
+                  <img src={order.imgSrc} alt="product-data" loading="lazy"  />
                 </div>
                 <div className="product-data-aob">
                   <div className="title">

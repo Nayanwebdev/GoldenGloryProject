@@ -14,7 +14,7 @@ const MyWishlistBlock = () => {
               {wishlists.map((item, i) => (
                 <div className="wish-card" key={i}>
                   <div className="left-img">
-                    <img src={item.imgSrc} alt="wishlist" />
+                    <img src={item.imgSrc} alt="wishlist" loading="lazy" />
                   </div>
                   <div className="right-text">
                     <h5>{item.text}</h5>
@@ -26,7 +26,7 @@ const MyWishlistBlock = () => {
             </div>
           ) : (
             <div className="empty-block">
-              <img src={emptyWishlist} alt="" />
+              <img src={emptyWishlist} alt="empt" loading="lazy"/>
               <span>Empty Wishlist</span>
               <p>You have no items in your wishlist. Start adding!</p>
             </div>

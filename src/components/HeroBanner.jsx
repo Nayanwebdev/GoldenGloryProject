@@ -42,7 +42,7 @@ export default function HeroBanner() {
             </div>
             <div className="right-banner-hp">
               <div className="right-banner-img-hp">
-                <img src={banneImg} alt="btn-img" loading="lazy"  />
+                <img src={banneImg} alt="btn-img" />
               </div>
               <div className="right-banner-img-bg-hp"></div>
               <div className="right-banner-product-hp">

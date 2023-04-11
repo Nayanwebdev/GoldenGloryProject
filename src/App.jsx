@@ -12,7 +12,9 @@ import Profile from "./pages/Profile";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import ErrorPage from "./components/ErrorPage";
+import axios from "axios";
 
+axios.defaults.baseURL = 'http://192.168.1.2:8866';
 
 function App() {
   return (

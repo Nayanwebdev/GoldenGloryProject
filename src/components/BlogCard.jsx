@@ -51,6 +51,7 @@ const Wrapper = styled.div`
           text-align: center;
           background: var(--text-color);
           padding: 8px;
+          min-width: 60px;
           h3 {
             font-size: 22px;
             line-height: 30px;
@@ -80,6 +81,7 @@ const Wrapper = styled.div`
             font-size: 14px;
             line-height: 20px;
             color: var(--golden-color);
+            text-transform: capitalize;
           }
           span {
             height: 20px;

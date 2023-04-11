@@ -52,7 +52,6 @@ export default function SingleProduct() {
       totalPrice: "",
     },
   ];
-
   const products = [
     { imgSrc: img, title: "Pearls Breslate", discPrice: "$549", price: "$499" },
     { imgSrc: img1, title: "Pearls Breslate", discPrice: "$549", price: "$499" },
@@ -63,7 +62,42 @@ export default function SingleProduct() {
     { imgSrc: img6, title: "Pearls Earrings", discPrice: "$649", price: "$555" },
   ];
 
-  const settings = {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          dots: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          dots: false,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  const setting = {
     showArrows: false,
     infiniteLoop: true,
     showStatus: false,
@@ -71,8 +105,7 @@ export default function SingleProduct() {
     showIndicators: false,
     swipeable: true,
     emulateTouch: true,
-}
-
+  };
 
   return (
     <Wrapper>
@@ -81,10 +114,10 @@ export default function SingleProduct() {
         <div className="container">
           <div className="single-product-in-spp">
             <div className="left-img-block-spp">
-              <Carousel {...settings} >
+              <Carousel {...setting}>
                 {productImgs.map((imgSrc, i) => (
                   <div className="slider-img-spp" key={i}>
-                    <img src={imgSrc} alt="product" loading="lazy"/>
+                    <img src={imgSrc} alt="product" loading="lazy" />
                   </div>
                 ))}
               </Carousel>

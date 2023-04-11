@@ -5,10 +5,18 @@ import PageBanner from "../components/PageBanner";
 import SideBar from "../components/SideBar";
 import axios from "axios";
 
+import blogImg1 from "../assets/images/blog_img_1.webp";
+import blogImg2 from "../assets/images/blog_img_2.webp";
+import blogImg3 from "../assets/images/blog_img_3.webp";
+import blogImg4 from "../assets/images/blog_img_4.webp";
+import blogImg5 from "../assets/images/blog_img_5.webp";
+import blogImg6 from "../assets/images/blog_img_6.webp";
+
 export default function Blog() {
   const [blog, setBlog] = useState();
   const baseUrl = import.meta.env.VITE_BASE_URL;
   const key = import.meta.env.VITE_STRAPI_KEY;
+
   let config = {
     method: "get",
     maxBodyLength: Infinity,
@@ -32,6 +40,14 @@ export default function Blog() {
   const day = dateArr[2];
   const month = dateArr[1];
 
+  const Blogs = [
+    { title: "Blog Image Post", imgSrc: blogImg1, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Post With Gallery", imgSrc: blogImg2, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Onide Nidie Inida Model", imgSrc: blogImg3, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Binis Mnisd Inigs", imgSrc: blogImg4, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Thisn Lorem Monhd", imgSrc: blogImg5, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Mithout warkness", imgSrc: blogImg6, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+  ];
   return (
     <Wrapper>
       <PageBanner pageTitle="blog" pageLink="blog" />
@@ -43,6 +59,11 @@ export default function Blog() {
             </div>
             <div className="right-blck-bp">
               <div className="blog-block-bp">
+                {Blogs.map((blog, i) => (
+                  <BlogCard key={i} title={blog.title} imgSrc={blog.imgSrc} date={blog.date} month={blog.month} postBy={blog.postBy} comment={blog.comment} desc={blog.desc} />
+                ))}
+              </div>
+              <div className="blog-block-bp mt-5">
                 {blog?.data?.map((blog, i) => (
                   <BlogCard key={i} title={blog?.attributes?.title} imgSrc={baseUrl + blog?.attributes?.blogImg?.data?.attributes?.url} date={day} month={month} postBy={blog?.attributes?.postby} comment={blog?.attributes?.comment} desc={blog?.attributes?.description} />
                 ))}
@@ -132,7 +153,7 @@ const Wrapper = styled.div`
   @media (min-width: 768px) and (max-width: 991px) {
     .blog-page-block-bp {
       .blog-page-in-bp {
-      padding-block: 20px 40px;
+        padding-block: 20px 40px;
         .right-blck-bp {
           padding-left: 20px;
           .blog-block-bp {

@@ -7,6 +7,17 @@ import SideBar from "../components/SideBar";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
+import img1 from "../assets/images/Pearls_Breslate_1.webp";
+import img2 from "../assets/images/Pearls_Breslate_2.webp";
+import img3 from "../assets/images/Pearls_Earring_1.webp";
+import img4 from "../assets/images/Pearls_Earring_2.webp";
+import img5 from "../assets/images/Pearls_Earring_3.webp";
+import img6 from "../assets/images/Pearls_Earring_4.webp";
+import img7 from "../assets/images/perarls_ring_2.webp";
+import img8 from "../assets/images/Pearls_Earring_5.webp";
+import img9 from "../assets/images/Pearls_Earring_6.webp";
+import img10 from "../assets/images/Pearls_Earring_7.webp";
+
 export default function Collection() {
   const [product, setProduct] = useState([]);
   const baseUrl = import.meta.env.VITE_BASE_URL;
@@ -30,6 +41,19 @@ export default function Collection() {
       });
   }, []);
 
+  const products = [
+    { imgSrc: img1, title: "Pearls Breslate", price: "$123" },
+    { imgSrc: img2, title: "Pearls Breslate", price: "$123" },
+    { imgSrc: img3, title: "Pearls Earrings", price: "$123" },
+    { imgSrc: img7, title: "Pearls Earrings", price: "$123" },
+    { imgSrc: img8, title: "Pearls Earrings", price: "$123" },
+    { imgSrc: img4, title: "Pearls Earrings", price: "$123" },
+    { imgSrc: img5, title: "Pearls Earrings", price: "$123" },
+    { imgSrc: img6, title: "Pearls Earrings", price: "$123" },
+    { imgSrc: img9, title: "Pearls Earrings", price: "$123" },
+    { imgSrc: img10, title: "Pearls Earrings", price: "$123" },
+  ];
+
   return (
     <Wrapper>
       <div className="collection-block-main-clp">
@@ -43,6 +67,11 @@ export default function Collection() {
             </div>
             <div className="right-block-clp">
               <NewProduct />
+              <div className="collections-clp">
+                {products.map((product, index) => (
+                  <ProductCard key={index} imgSrc={product.imgSrc} title={product.title} price={product.price} />
+                ))}
+              </div>
               <div className="collections-clp">
                 {product?.data?.map((item, index) => (
                   <ProductCard key={index} imgSrc={baseUrl + item?.attributes?.imgSrc?.data?.[0]?.attributes?.url} title={item?.attributes?.name} price={`$ ${item.attributes.price}`} />

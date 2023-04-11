@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import personIcon from "../assets/images/person.svg";
+import commentIcon from "../assets/images/comment.svg";
 
 export default function BlogCard({ title, imgSrc, postBy, comment, desc, date, month }) {
   return (
@@ -8,7 +10,7 @@ export default function BlogCard({ title, imgSrc, postBy, comment, desc, date, m
       <div className="blog-card-block-bcc">
         <div className="blog-card-in-bcc">
           <div className="card-img-bcc">
-            <img src={imgSrc} alt="blog-img" loading="lazy"  />
+            <img src={imgSrc} alt="blog-img" loading="lazy" />
             <div className="blog-date-bcc">
               <h3>{date}</h3>
               <h4>{month}</h4>
@@ -19,9 +21,15 @@ export default function BlogCard({ title, imgSrc, postBy, comment, desc, date, m
               <h2>{title}</h2>
             </div>
             <div className="post-by-bcc">
-              <h4>Posted By {postBy}</h4>
+              <h4>
+                <img src={personIcon} alt="tag icon" />
+                Posted By {postBy}
+              </h4>
               <span></span>
-              <h4>{comment} Comments</h4>
+              <h4>
+                <img src={commentIcon} alt="tag icon" />
+                {comment} Comments
+              </h4>
             </div>
             <p>{desc}</p>
             <NavLink to="/" className="btn-main-hp dark-btn-hp">
@@ -82,10 +90,18 @@ const Wrapper = styled.div`
             line-height: 20px;
             color: var(--golden-color);
             text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            img {
+              height: 13px;
+              width: auto;
+              margin-right: 5px;
+            }
           }
           span {
             height: 20px;
-            border: 1px solid var(--text-color);
+            width: 2px;
+            background: var(--text-color);
           }
         }
         p {

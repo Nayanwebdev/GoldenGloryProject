@@ -163,8 +163,10 @@ const Wrapper = styled.div`
           gap: 20px;
           li {
             a {
+              display: flex;
               img {
                 /* width: 20px; */
+                height: 21px;
               }
             }
           }

@@ -93,7 +93,7 @@ const Wrapper = styled.div`
           .left-icon-cp {
             img {
               max-width: 54px;
-              object-fit: cover;
+              object-fit: contain;
             }
           }
           .left-content-cp {

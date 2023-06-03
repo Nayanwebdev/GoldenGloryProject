@@ -4,7 +4,12 @@ import styled from "styled-components";
 import personIcon from "../assets/images/person.svg";
 import commentIcon from "../assets/images/comment.svg";
 
-export default function BlogCard({ title, imgSrc, postBy, comment, desc, date, month }) {
+export default function BlogCard({ title, imgSrc, postBy, comment, desc, newDate }) {
+
+  const dateArr = new Date(newDate).toDateString().split(" ");
+  const day = dateArr[2];
+  const month = dateArr[1];
+  
   return (
     <Wrapper>
       <div className="blog-card-block-bcc">
@@ -12,7 +17,7 @@ export default function BlogCard({ title, imgSrc, postBy, comment, desc, date, m
           <div className="card-img-bcc">
             <img src={imgSrc} alt="blog-img" loading="lazy" />
             <div className="blog-date-bcc">
-              <h3>{date}</h3>
+              <h3>{day}</h3>
               <h4>{month}</h4>
             </div>
           </div>

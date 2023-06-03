@@ -61,8 +61,7 @@ export default function SingleProduct() {
     { imgSrc: img5, title: "Pearls Earrings", discPrice: "$549", price: "$499" },
     { imgSrc: img6, title: "Pearls Earrings", discPrice: "$649", price: "$555" },
   ];
-
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -106,7 +105,6 @@ export default function SingleProduct() {
     swipeable: true,
     emulateTouch: true,
   };
-
   return (
     <Wrapper>
       <div className="single-product-block-spp">

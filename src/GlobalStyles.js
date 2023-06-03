@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-
 const GlobalStyle = createGlobalStyle`
 *{
     margin: 0px;
@@ -56,17 +55,12 @@ a {
     -ms-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
-
-a:hover,
-a:focus,
-a:active {
+a:is(:hover,:active,:focus){
     outline: none;
     text-decoration: none;
 }
 
-input:hover,
-input:focus,
-input:active {
+input:is(:hover,:focus,:active) {
     outline: none;
 }
 
@@ -120,14 +114,14 @@ img {
 .dark-btn-hp{
     background-color: var(--text-color);
 }
-.dark-btn-hp:hover{
+.dark-btn-hp:is(:hover,:active){
     color: var(--white-color);
     background-color: var(--golden-color);
 }
 .light-btn-hp{
     background-color: var(--golden-color);
 }
-.light-btn-hp:hover{
+.light-btn-hp:is(:hover,:active){
     color: var(--white-color);
     background-color: var(--text-color);
 }

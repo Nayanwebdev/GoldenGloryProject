@@ -30,7 +30,7 @@ export default function ContactForm() {
             <textarea className="input-cf input-textarea-cf" placeholder="enter your message" name="message" />
           </div>
         </div>
-        <button type="submit" className="btn-main-hp dark-btn-hp">
+        <button type="submit" className="btn-main-hp dark-btn-hp" area-aria-labelledby="send">
           send
         </button>
       </form>

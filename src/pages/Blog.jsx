@@ -30,23 +30,22 @@ export default function Blog() {
       .request(config)
       .then((response) => {
         setBlog(response.data);
+        // console.log(response.data.data);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
-  const date = blog?.data?.[0]?.attributes?.createdAt;
-  const dateArr = new Date(date).toDateString().split(" ");
-  const day = dateArr[2];
-  const month = dateArr[1];
 
+  const day = new Date().getDate();
+  const month = new Date().getMonth();
   const Blogs = [
-    { title: "Blog Image Post", imgSrc: blogImg1, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
-    { title: "Post With Gallery", imgSrc: blogImg2, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
-    { title: "Onide Nidie Inida Model", imgSrc: blogImg3, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
-    { title: "Binis Mnisd Inigs", imgSrc: blogImg4, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
-    { title: "Thisn Lorem Monhd", imgSrc: blogImg5, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
-    { title: "Mithout warkness", imgSrc: blogImg6, date: 15, month: "march", postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Blog Image Post", imgSrc: blogImg1, postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Post With Gallery", imgSrc: blogImg2, postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Onide Nidie Inida Model", imgSrc: blogImg3, postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Binis Mnisd Inigs", imgSrc: blogImg4, postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Thisn Lorem Monhd", imgSrc: blogImg5, postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
+    { title: "Mithout warkness", imgSrc: blogImg6, postBy: "Admin", comment: 0, desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim." },
   ];
   return (
     <Wrapper>
@@ -65,7 +64,7 @@ export default function Blog() {
               </div>
               <div className="blog-block-bp mt-5">
                 {blog?.data?.map((blog, i) => (
-                  <BlogCard key={i} title={blog?.attributes?.title} imgSrc={baseUrl + blog?.attributes?.blogImg?.data?.attributes?.url} date={day} month={month} postBy={blog?.attributes?.postby} comment={blog?.attributes?.comment} desc={blog?.attributes?.description} />
+                  <BlogCard key={i} title={blog?.attributes?.title} imgSrc={blog?.attributes?.blogImg?.data?.attributes?.url} newDate={blog?.attributes?.createdAt} postBy={blog?.attributes?.postby} comment={blog?.attributes?.comment} desc={blog?.attributes?.description} />
                 ))}
               </div>
             </div>

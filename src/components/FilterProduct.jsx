@@ -82,7 +82,7 @@ const FilterProduct = () => {
                 ))}
               </ul>
             </div>
-            <button className="btn-main-hp dark-btn-hp" >
+            <button className="btn-main-hp dark-btn-hp">
               Filter Search
             </button>
           </div>

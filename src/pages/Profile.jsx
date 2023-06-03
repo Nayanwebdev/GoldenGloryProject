@@ -130,7 +130,7 @@ export default function Profile() {
                 </div>
               </div>
               <div className="bottom-img-pp">
-                <img src={bottomBg} alt="" loading="lazy"/>
+                <img src={bottomBg} alt="bottom-img" loading="lazy"/>
               </div>
             </div>
           </div>

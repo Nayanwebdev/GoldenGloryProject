@@ -34,7 +34,7 @@ export default function MostPopular() {
     { imgSrc: img11, title: "Blue Pearls Bangles", discPrice: "$549", price: "$499" },
   ];
 
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,

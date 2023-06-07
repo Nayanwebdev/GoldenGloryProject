@@ -62,7 +62,7 @@ export default function Navbar() {
                 {navRightLinks.map((link, i) => (
                   <li key={i}>
                     <NavLink className="nav-link" to={link.href} role="button" exact="true" onClick={() => setShowNav(false)}>
-                      <img src={link.title} alt="header-icon" loading="lazy" />
+                      <img src={link.title} alt="header-icon" />
                     </NavLink>
                   </li>
                 ))}

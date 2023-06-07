@@ -11,12 +11,12 @@ export default function ProductCard({ imgSrc, title, discPrice, price }) {
         <img src={imgSrc} alt="card-img" loading="lazy"/>
         <div className="search">
           <a href="#">
-            <img src={searchIcon} alt="searchIcon" loading="lazy"/>
+            <img src={searchIcon} alt="searchIcon" />
           </a>
         </div>
         <div className="like">
           <a href="#">
-            <img src={likeIcon} alt="likeIcon" loading="lazy"/>
+            <img src={likeIcon} alt="likeIcon" />
           </a>
         </div>
         <div className="add-to-cart-cb">

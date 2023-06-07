@@ -24,7 +24,7 @@ export default function Contact() {
             <div className="left-block-cp">
               <div className="contact-card-cp">
                 <div className="left-icon-cp">
-                  <img src={location} alt="contact_icon" loading="lazy"/>
+                  <img src={location} alt="contact_icon" />
                 </div>
                 <div className="left-content-cp">
                   <h2>address</h2>
@@ -33,7 +33,7 @@ export default function Contact() {
                     {socials.map((icon, index) => (
                       <li key={index}>
                         <a href="#">
-                          <img src={icon} alt="social-media" loading="lazy"/>
+                          <img src={icon} alt="social-media"/>
                         </a>
                       </li>
                     ))}
@@ -42,7 +42,7 @@ export default function Contact() {
               </div>
               <div className="contact-card-cp">
                 <div className="left-icon-cp">
-                  <img src={phone} alt="contact_icon" loading="lazy"/>
+                  <img src={phone} alt="contact_icon" />
                 </div>
                 <div className="left-content-cp">
                   <h2>phone no.</h2>

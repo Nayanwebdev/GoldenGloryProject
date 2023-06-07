@@ -33,7 +33,7 @@ export default function Footer() {
                 {socials.map((icon, index) => (
                   <li key={index}>
                     <a href="#">
-                      <img src={icon} alt="social-media" loading="lazy" />
+                      <img src={icon} alt="social-media" />
                     </a>
                   </li>
                 ))}
@@ -88,7 +88,7 @@ export default function Footer() {
               <ul>
                 {payments.map((pay, i) => (
                   <li key={i}>
-                    <img src={pay} alt="pay-img" loading="lazy" />
+                    <img src={pay} alt="pay-img" />
                   </li>
                 ))}
               </ul>

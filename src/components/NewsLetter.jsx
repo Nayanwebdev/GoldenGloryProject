@@ -127,6 +127,7 @@ const Wrapper = styled.div`
             position: absolute;
             bottom: 283px;
             left: 30px;
+            max-width: 165px;
             img {
               height: 100%;
               width: 100%;

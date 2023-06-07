@@ -145,7 +145,11 @@ const Wrapper = styled.div`
               justify-content: center;
               border-radius: 50px;
               background: var(--bg-color);
-              :hover {
+              img{
+                height: 18px;
+                width: auto;
+              }
+              &:hover {
                 border-color: var(--text-color);
                 transform: translateY(-2px);
               }
@@ -213,6 +217,7 @@ const Wrapper = styled.div`
             background: rgb(255, 255, 255, 0.72);
             img {
               height: 21px;
+              width: auto;
             }
           }
         }

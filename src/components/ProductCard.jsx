@@ -59,7 +59,7 @@ const Wrapper = styled.div`
         background-color: rgb(255, 240, 226);
         img {
           height: 15px;
-          width: auto;
+          width: 15px;
         }
       }
     }
@@ -77,7 +77,7 @@ const Wrapper = styled.div`
         background-color: rgb(255, 240, 226);
         img {
           height: 15px;
-          width: auto;
+          width: 17px;
           object-fit: contain;
         }
       }

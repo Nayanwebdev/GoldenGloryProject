@@ -76,6 +76,11 @@ export default function Navbar() {
 }
 
 const Wrapper = styled.div`
+position: sticky;
+top: 0;
+left: 0;
+z-index: 999;
+background: var(--bs-white);
   header {
     position: relative;
     z-index: 999;

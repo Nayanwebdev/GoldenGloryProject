@@ -236,7 +236,6 @@ const Wrapper = styled.div`
     .single-product-in-spp {
       display: flex;
       gap: 70px;
-
       .left-img-block-spp {
         width: 45%;
         .carousel {

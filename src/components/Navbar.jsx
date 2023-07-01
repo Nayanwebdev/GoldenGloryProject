@@ -81,6 +81,7 @@ top: 0;
 left: 0;
 z-index: 999;
 background: var(--bs-white);
+box-shadow: 0 0 4px #c5bbbbb8;
   header {
     position: relative;
     z-index: 999;
